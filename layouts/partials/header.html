@@ -1,5 +1,24 @@
-<nav>
-    <a href="/">Home</a>
-    <a href="/exhibitions">exhibitions</a>
+<header>
+    <div class="top-text">
+      НИЯ ЦЕНКОВА / 12.24 - 02.25 / ГЕНЕРАЛ ГУРКО 45
+    </div>
+    
+    <nav class="main-nav">
+      <div class="logo-box logo-box-left">
+        <img src="/ui/lira-logo-box.svg" alt="Lira Logo">
+      </div>
+  
+      <div class="nav-links">
+        {{ range .Site.Menus.main }}
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+      </div>
+  
+      <div class="logo-box logo-box-right">
+        <img src="/ui/lira-logo-box.svg" alt="Lira Logo">
+      </div>
+    </nav>
 
-  </nav>
+    <!-- White strip under the nav -->
+    <div class="nav-underline"></div>
+</header>

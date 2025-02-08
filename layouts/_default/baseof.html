@@ -1,9 +1,39 @@
 <!DOCTYPE html>
-<html>
-  {{- partial "head.html" . -}}
+<html lang="{{ .Site.Language.Lang }}">
+  <head>
+    {{- partial "head.html" . -}}
+    <link rel="stylesheet" href="{{ "css/base.css" | relURL }}">  
+  </head>
   <body>
+    <div class="page-layout">
     {{- partial "header.html" . -}}
-    {{- block "main" . }}{{- end }}
-    {{- partial "footer.html" . -}}
+      <!-- Left side decorations -->
+      <div class="side-deco left">
+        <img src="{{ "ui/side-deco.svg" | relURL }}" alt="Left Decoration" />
+      </div>
+
+      <div class="side-bar left"></div>
+      <div class="side-white-bar left"></div>
+
+      <!-- Main content -->
+      <div class="main-container">
+
+        <main>
+          {{- block "main" . }}{{- end }}
+        </main>
+
+        <footer>
+          <p>This is a footer.</p>
+        </footer>
+      </div>
+
+      <!-- Right side decorations -->
+      <div class="side-deco right">
+        <img src="{{ "ui/side-deco.svg" | relURL }}" alt="Right Decoration" />
+      </div>
+
+      <div class="side-bar right"></div>
+      <div class="side-white-bar right"></div>
+    </div>
   </body>
 </html>

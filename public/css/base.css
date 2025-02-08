@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #fff;
+    color: #333;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+  
+  header {
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+    background-color: #fff;
+  }
+  
+  .top-text {
+    text-align: center;
+    font-family: "Arial, sans-serif";
+    font-size: 1rem;
+    color: #333;
+    padding: 0.5em 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  nav.main-nav {
+    width: 100%;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    min-height: 2.3rem;
+    overflow: hidden;
+    z-index: 900;
+  }
+  
+  .nav-underline {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #fff;
+    border-bottom: 2px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    z-index: 900;
+  }
+  
+  .logo-box {
+    width: 8.36rem;
+    height: 100%;
+    display: flex;
+    flex: 0 0 auto; /* Prevent unwanted flex resizing */
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+  
+  .logo-box img {
+    height: 100%;
+    width: auto;
+  }
+  
+  .logo-box-right img {
+    transform: scaleX(-1);
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Arial, sans-serif";
+    font-size: 1.125rem;
+    margin: 0 1.5rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #aaa;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  /* Fix the size of side SVG decorations */
+  .side-deco {
+    position: fixed;
+    top: 0;
+    width: 2rem;
+    background: url("/ui/side-deco.svg") no-repeat center;
+    background-size: contain;
+  }
+  
+  .side-deco.left {
+    left: 0;
+  }
+  
+  .side-deco.right {
+    right: 0;
+    transform: scaleX(-1);
+  }
+  
+  /* Set correct width and position for black sidebars */
+  .side-bar {
+    position: fixed;
+    top: 0;
+    width: 6rem; /* Black bar width */
+    height: 100vh;
+    background-color: #000;
+    z-index: -2;
+  }
+  
+  .side-bar.left {
+    left: 1.8rem; /* Positioned after the SVG decoration */
+  }
+  
+  .side-bar.right {
+    right: 1.8rem;
+  }
+  
+  /* Adjust position and visibility of white bars */
+  .side-white-bar {
+    position: fixed;
+    top: 0;
+    width: 0.5rem;
+    height: 100vh;
+    background-color: #fff;
+    border-left: 2px solid black;
+    z-index: -3;
+  }
+  
+  .side-white-bar.left {
+    left: 8.5rem;
+  }
+  
+  .side-white-bar.right {
+    right: 8rem;
+  }
+  
+  main {
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  footer {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+  }
+  
