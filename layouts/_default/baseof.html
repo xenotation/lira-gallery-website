@@ -21,10 +21,7 @@
         <main>
           {{- block "main" . }}{{- end }}
         </main>
-
-        <footer>
-          <p>This is a footer.</p>
-        </footer>
+        {{- partial "footer.html" . -}}
       </div>
 
       <!-- Right side decorations -->
@@ -34,6 +31,8 @@
 
       <div class="side-bar right"></div>
       <div class="side-white-bar right"></div>
+
     </div>
+    <script src="/js/time.js"></script>
   </body>
 </html>

@@ -1,1 +1,7 @@
-<div>This is a footer</div>
+<footer>
+    <img src="{{ "ui/ncf.svg" | relURL }}" alt="Footer Logo" class="footer-logo" />
+    <div class="footer-content">
+      {{ .Site.Params.footerText | markdownify }}
+    </div>
+  </footer>
+  

@@ -5,13 +5,45 @@ languageCode = "bg-bg"
 [menu]
 
   [[menu.main]]
-    identifier = "home"
-    name = "Начало"
-    url = "/"
-    weight = 1
-
-  [[menu.main]]
     identifier = "exhibitions"
     name = "Изложби"
     url = "/exhibitions"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "gallery"
+    name = "Галерия"
+    url = "/gallery"
     weight = 2
+
+  [[menu.main]]
+    identifier = "archive"
+    name = "Архив"
+    url = "/archive"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "contacts"
+    name = "Контакти"
+    url = "/contacts"
+    weight = 4
+
+# Ticker  Items
+
+[[params.tickerItems]]
+text = "НИЯ ЦЕНКОВА / 12.24 - 02.25 / ГЕНЕРАЛ ГУРКО 45"
+
+[[params.tickerItems]]
+text = "НИЯ ЦЕНКОВА / 12.24 - 02.25 / ГЕНЕРАЛ ГУРКО 45"
+
+[[params.tickerItems]]
+text = "НИЯ ЦЕНКОВА / 12.24 - 02.25 / ГЕНЕРАЛ ГУРКО 45"
+
+[[params.tickerItems]]
+text = "НИЯ ЦЕНКОВА / 12.24 - 02.25 / ГЕНЕРАЛ ГУРКО 45"
+
+[[params.tickerItems]]
+text = "НИЯ ЦЕНКОВА / 12.24 - 02.25 / ГЕНЕРАЛ ГУРКО 45"
+
+[params]
+footerText = "Проектът се осъществява с подкрепата на Национален фонд „Култура“, програма „Дебюти“."

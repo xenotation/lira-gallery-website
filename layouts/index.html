@@ -1,3 +1,26 @@
 {{ define "main" }}
-this is a home page.
+<div class="main-container">
+    <div class="frame-container">
+        <!-- SVG Frame and Title Overlay -->
+        <div class="svg-wrapper">
+            <img src="ui/ncf.svg" alt="SVG Frame" class="svg-frame">
+
+
+            {{ with (index (where .Site.RegularPages "Type" "exhibitions") 0) }}
+                <h1 class="central-title">{{ .Title }}</h1>
+            {{ end }}
+        </div>
+    </div>
+
+    <!-- Post details underneath the SVG frame -->
+    <div class="post-details-container">
+        {{ with (index (where .Site.RegularPages "Type" "exhibitions") 0) }}
+            <div class="post-details">
+                {{ with .Params }}
+                    <p>{{ .artist }} / {{ .dates }}</p>
+                {{ end }}
+            </div>
+        {{ end }}
+    </div>
+</div>
 {{ end }}
