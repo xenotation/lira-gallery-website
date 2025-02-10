@@ -399,3 +399,18 @@ footer {
 .list-item:hover .bullet-point {
     color: var(--color-blue);
 }
+
+/* Exhibition Photo Numbers */
+.number-sequence span {
+    cursor: pointer;
+    padding: 0 8px;
+    font-size: 18px;
+    color: #666;
+}
+
+.number-sequence span.active {
+    font-weight: bold;
+    text-decoration: underline !important;
+    color: #000;
+}
+

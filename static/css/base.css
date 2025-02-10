@@ -452,6 +452,7 @@ footer {
 .header-section {
     display: flex;
     justify-content: space-between;
+    text-transform: uppercase;
     text-align: left;
     align-items: baseline;
     margin-bottom: 1rem;
@@ -516,4 +517,16 @@ footer {
     color: var(--color-black);
     text-align: justify;
 
+}
+/* Exhibition Photo Numbers */
+.number-sequence span {
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+}
+
+.number-sequence span.active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #000;
 }

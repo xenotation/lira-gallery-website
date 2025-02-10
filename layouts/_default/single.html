@@ -3,7 +3,7 @@
     <div class="exhbition-small-title">
         {{ .Title }}&nbsp;/&nbsp;{{ .Params.artist }}
     </div>
-
+    
     <div class="content-card-container">
         <div class="content-card">
             <div class="header-section">
@@ -11,11 +11,11 @@
                 <div class="dates">{{ .Params.dates }}</div>
             </div>
 
-            <!-- Number sequence under title (Dynamically generated) -->
+            <!-- Number sequence under title with data-src -->
             <div class="number-sequence" id="image-selector">
                 {{ $counter := 1 }}
                 {{ range $index, $file := (.Resources.ByType "image") }}
-                    <span data-index="{{ $index }}">{{ printf "%02d" $counter }}</span>
+                    <span data-src="{{ $file.RelPermalink }}">{{ printf "%02d" $counter }}</span>
                     {{ $counter = add $counter 1 }}
                 {{ end }}
             </div>
@@ -27,6 +27,7 @@
 
             <!-- Image Section -->
             <div class="featured-image">
+                <!-- Set the first image as the default src -->
                 <img id="main-image" src="{{ with (.Resources.ByType "image").Get 0 }}{{ .RelPermalink }}{{ end }}" alt="{{ .Title }}" />
             </div>
 
@@ -41,16 +42,5 @@
 </article>
 
 <!-- Load external JavaScript file -->
-<script src="/js/image-gallery.js"></script>
-
-<script>
-    // Pass image URLs from Hugo to JavaScript
-    window.imageGalleryData = {
-        images: [
-            {{ range .Resources.ByType "image" }}
-            "{{ .RelPermalink }}",
-            {{ end }}
-        ]
-    };
-</script>
+<script src="{{ "js/image-gallery.js" | relURL }}"></script>
 {{ end }}
