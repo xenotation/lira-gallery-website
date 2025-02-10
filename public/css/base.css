@@ -412,7 +412,7 @@ footer {
     background-color: var(--color-black);
     color: var(--color-blue);
     padding: 0.5rem 0.4rem;
-    position: relative;
+    position: fixed;
     text-align: left;
     font-size: 0.8em;
     z-index: 800; /* Below the card */
