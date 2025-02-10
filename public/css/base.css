@@ -200,6 +200,7 @@ nav.main-nav {
 /* Flex setup for basedof bg */
 .flex-bg {
     display: flex;
+
 }
 
 .flex-main {
@@ -208,6 +209,9 @@ nav.main-nav {
     flex-direction: column;
 }
 
+.flex-right {
+    z-index: 900;
+}
 
 /* Main Content */
 .main-container {
@@ -408,7 +412,7 @@ footer {
 
 /* Small Vert Tittle */
 .exhbition-small-title {
-    width: 100%;
+    width: 108rem;
     background-color: var(--color-black);
     color: var(--color-blue);
     padding: 0.5rem 0.4rem;
@@ -444,3 +448,71 @@ footer {
 
 
 
+/* The exhition content */
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: baseline;
+    margin-bottom: 1rem;
+}
+
+.header-section h1 {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1;
+    color: var(--color-black);
+}
+
+.header-section .dates {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-black);
+    text-align: right;
+}
+
+.number-sequence {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-family: var(--font-light);
+    color: var(--color-black);
+    margin-bottom: 1.5rem;
+}
+
+.decorative-svg {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 850; /* Behind content but above image */
+    opacity: 0.8; /* Semi-transparent effect */
+}
+
+.decorative-svg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.featured-image {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.featured-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.content-section {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: var(--font-main);
+    color: var(--color-black);
+}

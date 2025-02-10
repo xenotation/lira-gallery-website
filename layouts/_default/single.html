@@ -6,11 +6,32 @@
 
     <div class="content-card-container">
         <div class="content-card">
-            <h1>{{ .Title }}</h1>
-            <div class="dates">{{ .Params.dates }}</div>
-            {{ .Content }}
-            <div class="artist-name">{{ .Params.artist }}</div>
-            <div class="bio">{{ .Params.bio }}</div>
+            <div class="header-section">
+                <h1>{{ .Title }}</h1>
+                <div class="dates">{{ .Params.dates }}</div>
+            </div>
+
+            <!-- Number sequence under title -->
+            <div class="number-sequence">
+                <span>01</span> <span>02</span> <span>03</span> <span>04</span> <span>05</span> <span>06</span> <span>07</span>
+            </div>
+
+            <!-- Decorative SVG -->
+            <div class="decorative-svg">
+                <img src="{{ "images/decorative-overlay.svg" | relURL }}" alt="Decorative Overlay" />
+            </div>
+
+            <!-- Image Section -->
+            <div class="featured-image">
+                <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" />
+            </div>
+
+            <!-- Exhibition Content -->
+            <div class="content-section">
+                <p>{{ .Content }}</p>
+                <div class="artist-name">{{ .Params.artist }}</div>
+                <div class="bio">{{ .Params.bio }}</div>
+            </div>
         </div>
     </div>
 </article>
