@@ -1,10 +1,17 @@
 {{ define "main" }}
-  <article>
-    <h1>{{ .Title }}</h1>
-    <div class="dates">{{ .Params.dates }}</div>
-        {{ .Content }}
-    
-    <div class="artist-name">{{ .Params.artist }}</div>
-    <div class="bio">{{ .Params.bio }}</div>    
-  </article>
+<article>
+    <div class="exhbition-small-title">
+        {{ .Title }}&nbsp;/&nbsp;{{ .Params.artist }}
+    </div>
+
+    <div class="content-card-container">
+        <div class="content-card">
+            <h1>{{ .Title }}</h1>
+            <div class="dates">{{ .Params.dates }}</div>
+            {{ .Content }}
+            <div class="artist-name">{{ .Params.artist }}</div>
+            <div class="bio">{{ .Params.bio }}</div>
+        </div>
+    </div>
+</article>
 {{ end }}
