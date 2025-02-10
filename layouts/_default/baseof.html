@@ -7,31 +7,41 @@
   <body>
     <div class="page-layout">
     {{- partial "header.html" . -}}
-      <!-- Left side decorations -->
-      <div class="side-deco left">
-        <img src="{{ "ui/side-deco.svg" | relURL }}" alt="Left Decoration" />
+
+      <!-- Flex container for  background -->
+      <div class="flex-bg">
+
+      <!-- Left side decorations container-->
+        <div class="flex-left">
+          <div class="side-deco left">
+            <img src="{{ "ui/side-deco.svg" | relURL }}" alt="Left Decoration" />
+          </div>
+
+          <div class="side-bar left"></div>
+          <div class="side-white-bar left"></div>
+        </div>
+        <!-- Main content -->
+        <div class="flex-main">
+        <div class="main-container">
+          <main>
+            {{- block "main" . }}{{- end }}
+            {{- partial "footer.html" . -}}
+          </main>
+
+        </div>
       </div>
 
-      <div class="side-bar left"></div>
-      <div class="side-white-bar left"></div>
+        <!-- Right side decorations -->
+          <div class="flex-right">
+            <div class="side-deco right">
+              <img src="{{ "ui/side-deco.svg" | relURL }}" alt="Right Decoration" />
+            </div>
 
-      <!-- Main content -->
-      <div class="main-container">
+            <div class="side-bar right"></div>
+            <div class="side-white-bar right"></div>
+          </div>
 
-        <main>
-          {{- block "main" . }}{{- end }}
-        </main>
-        {{- partial "footer.html" . -}}
-      </div>
-
-      <!-- Right side decorations -->
-      <div class="side-deco right">
-        <img src="{{ "ui/side-deco.svg" | relURL }}" alt="Right Decoration" />
-      </div>
-
-      <div class="side-bar right"></div>
-      <div class="side-white-bar right"></div>
-
+        </div>
     </div>
     <script src="/js/time.js"></script>
   </body>

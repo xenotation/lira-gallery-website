@@ -1,7 +1,7 @@
 +++
-title = 'First'
-date = 2025-02-08T09:01:00+02:00
+title = 'Стогодишнияtт Прозорец 1'
+date = 2025-06-08T09:12:25+02:00
 draft = true
-layout = "single"
+artist = "НИЯ ЦЕНКОВА"
+dates = "12.24 - 02.25"
 +++
-opa tova e suudurjanie

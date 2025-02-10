@@ -6,28 +6,56 @@
     <description>Recent content on Моят сайт</description>
     <generator>Hugo</generator>
     <language>bg-bg</language>
-    <lastBuildDate>Sat, 08 Feb 2025 09:12:25 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 08 Jun 2025 09:12:25 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Стогодишнияtт Прозорец</title>
+      <title>Стогодишнияtт Прозорец 1</title>
+      <link>http://localhost:1313/exhibitions/first/</link>
+      <pubDate>Sun, 08 Jun 2025 09:12:25 +0200</pubDate>
+      <guid>http://localhost:1313/exhibitions/first/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Стогодишнияtт Прозорец 2</title>
+      <link>http://localhost:1313/exhibitions/five/</link>
+      <pubDate>Wed, 05 Mar 2025 09:12:25 +0200</pubDate>
+      <guid>http://localhost:1313/exhibitions/five/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Стогодишнияtт Прозорец 4</title>
+      <link>http://localhost:1313/exhibitions/fourt/</link>
+      <pubDate>Mon, 10 Feb 2025 09:12:25 +0200</pubDate>
+      <guid>http://localhost:1313/exhibitions/fourt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Стогодишнияtт Прозорец 5</title>
+      <link>http://localhost:1313/exhibitions/second/</link>
+      <pubDate>Sun, 09 Feb 2025 09:12:25 +0200</pubDate>
+      <guid>http://localhost:1313/exhibitions/second/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Стогодишнияtт Прозорец 6</title>
       <link>http://localhost:1313/exhibitions/thrid/</link>
       <pubDate>Sat, 08 Feb 2025 09:12:25 +0200</pubDate>
       <guid>http://localhost:1313/exhibitions/thrid/</guid>
       <description></description>
     </item>
     <item>
-      <title>Second</title>
-      <link>http://localhost:1313/exhibitions/second/</link>
-      <pubDate>Sat, 08 Feb 2025 09:12:22 +0200</pubDate>
-      <guid>http://localhost:1313/exhibitions/second/</guid>
+      <title>Стогодишнияtт Прозорец 7</title>
+      <link>http://localhost:1313/exhibitions/severn/</link>
+      <pubDate>Sat, 08 Feb 2025 09:12:25 +0200</pubDate>
+      <guid>http://localhost:1313/exhibitions/severn/</guid>
       <description></description>
     </item>
     <item>
-      <title>First</title>
-      <link>http://localhost:1313/exhibitions/first/</link>
-      <pubDate>Sat, 08 Feb 2025 09:01:00 +0200</pubDate>
-      <guid>http://localhost:1313/exhibitions/first/</guid>
-      <description>opa tova e suudurjanie</description>
+      <title>Стогодишнияtт Прозорец 3</title>
+      <link>http://localhost:1313/exhibitions/fix/</link>
+      <pubDate>Wed, 05 Feb 2025 09:12:25 +0200</pubDate>
+      <guid>http://localhost:1313/exhibitions/fix/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

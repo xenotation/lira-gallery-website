@@ -8,7 +8,7 @@ window.onload = function () {
         now = now.replace(' ч.', '').trim();
 
         // Update the overlay text
-        const timeDiv = document.querySelector('.logo-box-right .overlay-text');
+        const timeDiv = document.querySelector('.logo-box-right .overlay-text-right');
         if (timeDiv) {
             timeDiv.textContent = now;
         }
