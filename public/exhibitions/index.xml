@@ -13,48 +13,55 @@
       <link>http://localhost:1313/exhibitions/first/</link>
       <pubDate>Sun, 08 Jun 2025 09:12:25 +0200</pubDate>
       <guid>http://localhost:1313/exhibitions/first/</guid>
-      <description></description>
+      <description>Стогодишният прозорец на Ния Ценкова е първата изложба в новооткритатата галерия „Лира“. Заглавието произтича именно от готовия предмет, с който художничката работи. Произведението отпраща към изоставените или занемарени сгради – човешките здания, оставени на произвола. Интуицията на художничката я води от обикновената тухла, през открехнатия или директно счупен прозорец, чак до порутения покрив. Разруха, която повсеместно е обхванала българските градове и села, довела до или произтекла от изоставянето на немалко от тях.</description>
+    </item>
+    <item>
+      <title>Стогодишнияtт Прозорец 1</title>
+      <link>http://localhost:1313/exhibitions/the-hundred-year-window/</link>
+      <pubDate>Sun, 08 Jun 2025 09:12:25 +0200</pubDate>
+      <guid>http://localhost:1313/exhibitions/the-hundred-year-window/</guid>
+      <description>Стогодишният прозорец на Ния Ценкова е първата изложба в новооткритатата галерия „Лира“. Заглавието произтича именно от готовия предмет, с който художничката работи. Произведението отпраща към изоставените или занемарени сгради – човешките здания, оставени на произвола. Интуицията на художничката я води от обикновената тухла, през открехнатия или директно счупен прозорец, чак до порутения покрив. Разруха, която повсеместно е обхванала българските градове и села, довела до или произтекла от изоставянето на немалко от тях.</description>
     </item>
     <item>
       <title>Стогодишнияtт Прозорец 2</title>
-      <link>http://localhost:1313/exhibitions/five/</link>
+      <link>http://localhost:1313/exhibitions/the-example-5/five/</link>
       <pubDate>Wed, 05 Mar 2025 09:12:25 +0200</pubDate>
-      <guid>http://localhost:1313/exhibitions/five/</guid>
+      <guid>http://localhost:1313/exhibitions/the-example-5/five/</guid>
       <description></description>
     </item>
     <item>
       <title>Стогодишнияtт Прозорец 4</title>
-      <link>http://localhost:1313/exhibitions/fourt/</link>
+      <link>http://localhost:1313/exhibitions/the-example-4/fourt/</link>
       <pubDate>Mon, 10 Feb 2025 09:12:25 +0200</pubDate>
-      <guid>http://localhost:1313/exhibitions/fourt/</guid>
+      <guid>http://localhost:1313/exhibitions/the-example-4/fourt/</guid>
       <description></description>
     </item>
     <item>
       <title>Стогодишнияtт Прозорец 5</title>
-      <link>http://localhost:1313/exhibitions/second/</link>
+      <link>http://localhost:1313/exhibitions/the-example-2/second/</link>
       <pubDate>Sun, 09 Feb 2025 09:12:25 +0200</pubDate>
-      <guid>http://localhost:1313/exhibitions/second/</guid>
+      <guid>http://localhost:1313/exhibitions/the-example-2/second/</guid>
       <description></description>
     </item>
     <item>
       <title>Стогодишнияtт Прозорец 6</title>
-      <link>http://localhost:1313/exhibitions/thrid/</link>
+      <link>http://localhost:1313/exhibitions/the-example-3/thrid/</link>
       <pubDate>Sat, 08 Feb 2025 09:12:25 +0200</pubDate>
-      <guid>http://localhost:1313/exhibitions/thrid/</guid>
+      <guid>http://localhost:1313/exhibitions/the-example-3/thrid/</guid>
       <description></description>
     </item>
     <item>
       <title>Стогодишнияtт Прозорец 7</title>
-      <link>http://localhost:1313/exhibitions/severn/</link>
+      <link>http://localhost:1313/exhibitions/the-example-7/severn/</link>
       <pubDate>Sat, 08 Feb 2025 09:12:25 +0200</pubDate>
-      <guid>http://localhost:1313/exhibitions/severn/</guid>
+      <guid>http://localhost:1313/exhibitions/the-example-7/severn/</guid>
       <description></description>
     </item>
     <item>
       <title>Стогодишнияtт Прозорец 3</title>
-      <link>http://localhost:1313/exhibitions/fix/</link>
+      <link>http://localhost:1313/exhibitions/the-other-thing/fix/</link>
       <pubDate>Wed, 05 Feb 2025 09:12:25 +0200</pubDate>
-      <guid>http://localhost:1313/exhibitions/fix/</guid>
+      <guid>http://localhost:1313/exhibitions/the-other-thing/fix/</guid>
       <description></description>
     </item>
   </channel>

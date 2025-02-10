@@ -1,6 +1,10 @@
 {{ define "main" }}
   <article>
     <h1>{{ .Title }}</h1>
-    <div>{{ .Content }}</div>
+    <div class="dates">{{ .Params.dates }}</div>
+        {{ .Content }}
+    
+    <div class="artist-name">{{ .Params.artist }}</div>
+    <div class="bio">{{ .Params.bio }}</div>    
   </article>
 {{ end }}

@@ -11,22 +11,25 @@
     <loc>http://localhost:1313/exhibitions/first/</loc>
     <lastmod>2025-06-08T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/exhibitions/five/</loc>
+    <loc>http://localhost:1313/exhibitions/the-hundred-year-window/</loc>
+    <lastmod>2025-06-08T09:12:25+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/exhibitions/the-example-5/five/</loc>
     <lastmod>2025-03-05T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/exhibitions/fourt/</loc>
+    <loc>http://localhost:1313/exhibitions/the-example-4/fourt/</loc>
     <lastmod>2025-02-10T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/exhibitions/second/</loc>
+    <loc>http://localhost:1313/exhibitions/the-example-2/second/</loc>
     <lastmod>2025-02-09T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/exhibitions/thrid/</loc>
+    <loc>http://localhost:1313/exhibitions/the-example-3/thrid/</loc>
     <lastmod>2025-02-08T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/exhibitions/severn/</loc>
+    <loc>http://localhost:1313/exhibitions/the-example-7/severn/</loc>
     <lastmod>2025-02-08T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/exhibitions/fix/</loc>
+    <loc>http://localhost:1313/exhibitions/the-other-thing/fix/</loc>
     <lastmod>2025-02-05T09:12:25+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>

@@ -57,7 +57,6 @@ body {
 header {
     width: 100%;
     position: sticky;
-    top: 0; /* Ensures header sticks at the top */
     z-index: 1000;
     background-color: var(--color-white);
 }
@@ -204,10 +203,7 @@ nav.main-nav {
 
 .flex-main {
     flex-grow: 1;
-    display: flex;
-    flex-direction: column;
 }
-
 
 /* Main Content */
 .main-container {
@@ -218,8 +214,9 @@ nav.main-nav {
     text-align: center;
     flex-grow: 1;
     overflow-y: auto;
+    height: calc(100vh - 6rem); /* Adjust to fit header/footer spacing if needed */
+    padding: 14rem 0 4rem 0; /* Hardcoded and  finicy have  to use grid */
     position: relative;
-    margin-top: 0; /* Ensure no hardcoded offsets */
 }
 
 .frame-container {
@@ -323,7 +320,6 @@ main {
     padding: 0 8.43rem 0 8.43rem;
     text-align: center;
     z-index: 420;
-    margin-bottom: 3.2rem;
 }
 
 /* Footer */
