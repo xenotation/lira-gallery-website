@@ -514,4 +514,6 @@ footer {
     line-height: 1.5;
     font-family: var(--font-main);
     color: var(--color-black);
+    text-align: justify;
+
 }

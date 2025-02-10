@@ -11,9 +11,13 @@
                 <div class="dates">{{ .Params.dates }}</div>
             </div>
 
-            <!-- Number sequence under title -->
-            <div class="number-sequence">
-                <span>01</span> <span>02</span> <span>03</span> <span>04</span> <span>05</span> <span>06</span> <span>07</span>
+            <!-- Number sequence under title (Dynamically generated) -->
+            <div class="number-sequence" id="image-selector">
+                {{ $counter := 1 }}
+                {{ range $index, $file := (.Resources.ByType "image") }}
+                    <span data-index="{{ $index }}">{{ printf "%02d" $counter }}</span>
+                    {{ $counter = add $counter 1 }}
+                {{ end }}
             </div>
 
             <!-- Decorative SVG -->
@@ -23,7 +27,7 @@
 
             <!-- Image Section -->
             <div class="featured-image">
-                <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" />
+                <img id="main-image" src="{{ with (.Resources.ByType "image").Get 0 }}{{ .RelPermalink }}{{ end }}" alt="{{ .Title }}" />
             </div>
 
             <!-- Exhibition Content -->
@@ -35,4 +39,18 @@
         </div>
     </div>
 </article>
+
+<!-- Load external JavaScript file -->
+<script src="/js/image-gallery.js"></script>
+
+<script>
+    // Pass image URLs from Hugo to JavaScript
+    window.imageGalleryData = {
+        images: [
+            {{ range .Resources.ByType "image" }}
+            "{{ .RelPermalink }}",
+            {{ end }}
+        ]
+    };
+</script>
 {{ end }}
