@@ -1,46 +1,52 @@
 {{ define "main" }}
-<article>
-    <div class="exhbition-small-title">
-        {{ .Title }}&nbsp;/&nbsp;{{ .Params.artist }}
-    </div>
-    
-    <div class="content-card-container">
-        <div class="content-card">
-            <div class="header-section">
-                <h1>{{ .Title }}</h1>
-                <div class="dates">{{ .Params.dates }}</div>
-            </div>
+    <div class="exhibition-title">{{ .Title }}&nbsp;/&nbsp;{{ .Params.artist }}</div>
 
-            <!-- Number sequence under title with data-src -->
-            <div class="number-sequence" id="image-selector">
-                {{ $counter := 1 }}
-                {{ range $index, $file := (.Resources.ByType "image") }}
-                    <span data-src="{{ $file.RelPermalink }}">{{ printf "%02d" $counter }}</span>
-                    {{ $counter = add $counter 1 }}
-                {{ end }}
-            </div>
+    <div class="content-card">
+        <div class="header-section">
+            <h1>{{ .Title }}</h1>
+            <div class="dates">{{ .Params.datestart }} {{ .Params.dateend }}</div>
+        </div>
 
-            <!-- Decorative SVG -->
-            <div class="decorative-svg">
-                <img src="{{ "images/decorative-overlay.svg" | relURL }}" alt="Decorative Overlay" />
-            </div>
+        <!-- Number sequence under title with data-src -->
+        <div class="number-sequence" id="image-selector">
+            {{ $counter := 1 }}
+            {{ range $index, $file := (.Resources.ByType "image") }}
+                <span data-src="{{ $file.RelPermalink }}">{{ printf "%02d" $counter }}</span>
+                {{ $counter = add $counter 1 }}
+            {{ end }}
+        </div>
 
-            <!-- Image Section -->
-            <div class="featured-image">
-                <!-- Set the first image as the default src -->
-                <img id="main-image" src="{{ with (.Resources.ByType "image").Get 0 }}{{ .RelPermalink }}{{ end }}" alt="{{ .Title }}" />
-            </div>
+        <!-- Decorative SVG -->
+        <div class="decorative-svg">
+            <img src="{{ "ui/decorative-overlay.svg" | relURL }}" alt="Decorative Overlay" />
+        </div>
 
-            <!-- Exhibition Content -->
-            <div class="content-section">
-                <p>{{ .Content }}</p>
-                <div class="artist-name">{{ .Params.artist }}</div>
+        <!-- Image Section -->
+        <div class="featured-image">
+            <img id="main-image" src="{{ with (.Resources.ByType "image").Get 0 }}{{ .RelPermalink }}{{ end }}" alt="{{ .Title }}" />
+        </div>
+
+        <!-- Exhibition Content -->
+        <div class="content-section">
+            {{ .Content }}
+
+            <!-- Artist Section -->
+            <div class="artist-section">
+                <div class="name-stars-wrapper">
+                    <div class="artist-name">{{ .Params.artist }}</div>
+                    <div class="artist-stars">
+                        <img src="{{ "ui/star.svg" | relURL }}" alt="Lira Stat" />
+                        <img src="{{ "ui/star.svg" | relURL }}" alt="Lira Stat" />
+                        <img src="{{ "ui/star.svg" | relURL }}" alt="Lira Stat" />
+                    </div>
+                </div>
+                
                 <div class="bio">{{ .Params.bio }}</div>
             </div>
         </div>
     </div>
-</article>
 
-<!-- Load external JavaScript file -->
-<script src="{{ "js/image-gallery.js" | relURL }}"></script>
+    {{- partial "footer.html" . -}}
+
+    <script src="{{ "js/image-gallery.js" | relURL }}"></script>
 {{ end }}

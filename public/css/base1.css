@@ -8,6 +8,16 @@
     --font-heading: "Helen", sans-serif;
     --font-light: "Helen-Light", sans-serif;
 }
+
+/* Remove Scroll Bars Everywhere */
+* {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+*::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
 /* Font Faces */
 @font-face {
     font-family: 'Helen';
@@ -26,51 +36,25 @@
     src: url('/fonts/Helen-Bg-Light.otf') format('opentype');
     font-weight: 300; /* Light weight for subtle text */
 }
-/* ////////////////////////// RESET //////////////////////////////// */
-                /* Remove Scroll Bars Everywhere */
-* {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
-}
-*::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
-}
-                /* Reset and Box Sizing */
+
+
+
+/* Reset and Box Sizing */
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
-/* ////////////////////////// BODY SETUP //////////////////////////////// */
+
 body {
     font-family: var(--font-main);
     background-color: var(--color-white);
     color: var(--color-black);
-    overflow-x: hidden;
-    height: 100%;    
 }
 
-html {
-    height: 100%;
-}
-main {
-    width:84vw; /* to not show  under the side  deco svg */
-    text-align: center;
-    z-index: 420;
-    margin-bottom: 3.2rem;
-}
-/* Main Content */
-.main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-grow: 1;
-    overflow-y: auto;
-    position: relative;
-    margin-top: 0;
-}
+
+
+
 /* Header */
 header {
     width: 100%;
@@ -79,6 +63,7 @@ header {
     z-index: 1000;
     background-color: var(--color-white);
 }
+
 /* Ticker */
 .ticker-wrap {
     width: 100%;
@@ -90,10 +75,12 @@ header {
     padding: 0.5rem 0;
     z-index: 1100;
 }
+
 .ticker {
     display: flex;
     animation: marquee 30s linear infinite;
 }
+
 .item {
     display: inline-block;
     padding: 0 2rem;
@@ -102,6 +89,7 @@ header {
     font-weight: bold;
     line-height: 2rem;
 }
+
 @keyframes marquee {
     0% {
         transform: translateX(0);
@@ -110,6 +98,7 @@ header {
         transform: translateX(-100%);
     }
 }
+
 /* Navigation */
 nav.main-nav {
     width: 100%;
@@ -120,6 +109,7 @@ nav.main-nav {
     min-height: 2.3rem;
     z-index: 900;
 }
+
 .nav-underline {
     width: 100%;
     height: 0.5rem;
@@ -129,6 +119,7 @@ nav.main-nav {
     box-shadow: var(--box-shadow);
     z-index: 1000;
 }
+
 .logo-box {
     width: 8.36rem;
     display: flex;
@@ -137,38 +128,36 @@ nav.main-nav {
     position: relative;
     overflow: visible;
 }
+
 .logo-box img {
     height: 100%;
     width: auto;
 }
+
 .logo-box-right img {
-    transform: scaleX(-1);
+    transform: scaleX(-1); /* Flip the logo horizontally */
 }
-.overlay-text-left {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateX(5%) translateY(-33%);
-    color: var(--color-blue);
-    font-size: 2.8rem;
-    font-weight: bold;
-    pointer-events: none;
-    text-align: left;
-    -webkit-text-stroke: 0.5px var(--color-black);
-    z-index: 1300;
-}
+
+.overlay-text-left,
 .overlay-text-right {
     position: absolute;
     top: 50%;
-    right: 0;
-    transform: translateX(-5%) translateY(-33%);
+    left: 0;
+    transform: translateX(2%) translateY(-40%);
     color: var(--color-blue);
-    font-size: 2.8rem;
-    font-weight: bold;
+    font-size: 3.7rem;
+    font-family: var(--font-light);
     pointer-events: none;
-    text-align: right;
-    -webkit-text-stroke: 0.5px var(--color-black);
+    text-align: left;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     z-index: 1300;
+}
+
+.overlay-text-right {
+    right: 0;
+    left: auto;
+    transform: translateX(0%) translateY(-40%);
+    text-align: right;
 }
 
 .nav-links {
@@ -208,80 +197,66 @@ nav.main-nav {
     opacity: 1;
 }
 
-/* Flex setup for basedof bg */
-.flex-bg {
+/* Baseof flex */
+
+.page-flex-container {
     display: flex;
-
+    background-color: var(--color-white);
+    height: 100%;
 }
+    .flex-main {
+        flex-grow:1;
+        position: relative;
+        z-index: 800;
+    }
 
-.flex-main {
-    flex-grow: 1;
+
+/* Left Side Column */
+.flex-deco-left {
+    position: absolute;
+    width: 2.3rem;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-}
-.flex-righ {
-    pointer-events: none;
-    z-index: 800;
-}
-
-.flex-left {
-    pointer-events: none;
-    z-index: 800;
-}
-
-
-
-
-
-
-/* Exhibition List */
-.list-container {
-    list-style: none;
-    padding: 0;
-    /* margin: 0  2rem 0 2rem; Is not see  below the svg side deco */
-    width: 100%;
-}
-
-.list-item {
-    width: 100%;
-    background-color: transparent;
-    transition: background-color 0.3s ease, border 0.3s ease;
-    padding: 4rem 0;
-    border-top: 1px solid var(--color-black);
-    border-bottom: 1px solid var(--color-black);
-}
-
-.list-item:hover {
-    background-color: var(--color-black);
-    border-top: 1px solid var(--color-black);
-    border-bottom: 1px solid var(--color-black);
-}
-
-.list-link {
-    display: flex;
     align-items: center;
-    width: 100%;
-    text-decoration: none;
-    color: var(--color-black);
-    font-weight: bold;
-    font-size: 1.2rem;
-    justify-content: center;
-    position: relative;
-    transition: color 0.3s ease;
+    background-color: var(--color-white);
+    z-index: 800;
+    border-right: 4px solid black;
 }
 
-.list-item:hover .list-link {
-    color: var(--color-blue);
+.flex-deco-left img {
+    width: 2rem;
+    height: 140vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: 810;
 }
 
-.bullet-point {
-    color: transparent; 
-    margin-right: 0.5rem;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
+.black-bar-left {
+    width: calc(8.36rem - 2rem);
+    height: 140vh;
+    background-color: var(--color-black);
+    position: fixed;
+    left: 1.9rem;
+    padding-right: 0.5rem;
+    border-color: 1px var(--color-black);
 }
 
-.list-item:hover .bullet-point {
-    color: var(--color-blue);
-}
 
+
+/* Footer */
+footer {
+    border-top: 1px solid var(--color-black);
+    background-color: var(--color-white);
+    display: flex;
+}
+    .footer-logo {
+        width: 1.5rem;
+    }
+    .footer-content {
+        max-width: 25rem;
+        text-align: left;
+        font-size: 0.8rem;
+        line-height: 1rem;
+        color: var(--color-black);
+    }

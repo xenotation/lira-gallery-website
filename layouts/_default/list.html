@@ -1,5 +1,4 @@
 {{ define "main" }}
-<section>
   <ul class="list-container">
     {{ range .Pages }}
       <li class="list-item">
@@ -12,5 +11,5 @@
       </li>
     {{ end }}
   </ul>
-</section>
+  {{- partial "footer.html" . -}}
 {{ end }}

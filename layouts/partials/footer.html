@@ -1,7 +1,11 @@
 <footer>
-    <img src="{{ "ui/ncf.svg" | relURL }}" alt="Footer Logo" class="footer-logo" />
-    <div class="footer-content">
-      {{ .Site.Params.footerText | markdownify }}
+  <div class="footer-inner-container">
+    <div class="footer-divider"></div>
+    <div class="footer-content-wrapper">
+      <img src="{{ "ui/ncf.svg" | relURL }}" alt="Footer Logo" class="footer-logo" />
+      <div class="footer-content">
+        {{ .Site.Params.footerText | markdownify }}
+      </div>
     </div>
-  </footer>
-  
+  </div>
+</footer>

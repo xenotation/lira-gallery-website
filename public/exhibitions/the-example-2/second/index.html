@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My site</title>
 
-  </head><link rel="stylesheet" href="/css/base.css">  
-  </head>
+    <link rel="stylesheet" href="/css/base.css">  
+    <link rel="stylesheet" href="/css/side-bars.css">  
+    <link rel="stylesheet" href="/css/footer.css">  
+    <link rel="stylesheet" href="/css/single.css">  
+    <title> Моят сайт </title>
+
+
+  </head></head>
   <body>
     <div class="page-layout"><header>
   <div class="ticker-wrap">
@@ -41,10 +46,13 @@
   </div>
 
   <nav class="main-nav">
+    
+    <a href="/" class="logo-link">
       <div class="logo-box logo-box-left">
-          <img src="/ui/lira-logo-box.svg" alt="Lira Logo">
-          <div class="overlay-text-left">Лира</div>
+        <img src="/ui/lira-logo-box.svg" alt="Lira Logo">
+        <div class="overlay-text-left">Лира</div>
       </div>
+    </a>
 
       <div class="nav-links">
           
@@ -84,53 +92,63 @@
         <div class="flex-main">
         <div class="main-container">
           <main>
-<article>
-    <div class="exhbition-small-title">
-        Стогодишнияtт Прозорец 5&nbsp;/&nbsp;НИЯ ЦЕНКОВА
-    </div>
-    
-    <div class="content-card-container">
-        <div class="content-card">
-            <div class="header-section">
-                <h1>Стогодишнияtт Прозорец 5</h1>
-                <div class="dates">12.24 - 02.25</div>
-            </div>
+    <div class="exhibition-title">Стогодишнияtт Прозорец 5&nbsp;/&nbsp;Гошо Мошо</div>
+
+    <div class="content-card">
+        <div class="header-section">
+            <h1>Стогодишнияtт Прозорец 5</h1>
+            <div class="dates"> </div>
+        </div>
+
+        
+        <div class="number-sequence" id="image-selector">
+            
+            
+        </div>
+
+        
+        <div class="decorative-svg">
+            <img src="/ui/decorative-overlay.svg" alt="Decorative Overlay" />
+        </div>
+
+        
+        <div class="featured-image">
+            <img id="main-image" src="" alt="Стогодишнияtт Прозорец 5" />
+        </div>
+
+        
+        <div class="content-section">
+            
 
             
-            <div class="number-sequence" id="image-selector">
+            <div class="artist-section">
+                <div class="name-stars-wrapper">
+                    <div class="artist-name">Гошо Мошо</div>
+                    <div class="artist-stars">
+                        <img src="/ui/star.svg" alt="Lira Stat" />
+                        <img src="/ui/star.svg" alt="Lira Stat" />
+                        <img src="/ui/star.svg" alt="Lira Stat" />
+                    </div>
+                </div>
                 
-                
-            </div>
-
-            
-            <div class="decorative-svg">
-                <img src="/images/decorative-overlay.svg" alt="Decorative Overlay" />
-            </div>
-
-            
-            <div class="featured-image">
-                <img id="main-image" src="" alt="Стогодишнияtт Прозорец 5" />
-            </div>
-
-            
-            <div class="content-section">
-                <p></p>
-                <div class="artist-name">НИЯ ЦЕНКОВА</div>
                 <div class="bio"></div>
             </div>
         </div>
+    </div><footer>
+  <div class="footer-inner-container">
+    <div class="footer-divider"></div>
+    <div class="footer-content-wrapper">
+      <img src="/ui/ncf.svg" alt="Footer Logo" class="footer-logo" />
+      <div class="footer-content">
+        Проектът се осъществява с подкрепата на Национален фонд „Култура“, програма „Дебюти“.
+      </div>
     </div>
-</article>
-
-
+  </div>
+</footer>
 <script src="/js/image-gallery.js"></script>
-<footer>
-    <img src="/ui/ncf.svg" alt="Footer Logo" class="footer-logo" />
-    <div class="footer-content">
-      Проектът се осъществява с подкрепата на Национален фонд „Култура“, програма „Дебюти“.
-    </div>
-  </footer>
-  </main>
+
+
+          </main>
 
         </div>
       </div>
@@ -146,6 +164,7 @@
           </div>
 
         </div>
+
     </div>
     <script src="/js/time.js"></script>
   </body>

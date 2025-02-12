@@ -8,17 +8,6 @@
     --font-heading: "Helen", sans-serif;
     --font-light: "Helen-Light", sans-serif;
 }
-
-
-/* Remove Scroll Bars Everywhere */
-* {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
-}
-*::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
-}
-
 /* Font Faces */
 @font-face {
     font-family: 'Helen';
@@ -37,22 +26,51 @@
     src: url('/fonts/Helen-Bg-Light.otf') format('opentype');
     font-weight: 300; /* Light weight for subtle text */
 }
-
-/* Reset and Box Sizing */
+/* ////////////////////////// RESET //////////////////////////////// */
+                /* Remove Scroll Bars Everywhere */
+* {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+*::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+                /* Reset and Box Sizing */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
-
+/* ////////////////////////// BODY SETUP //////////////////////////////// */
 body {
     font-family: var(--font-main);
     background-color: var(--color-white);
     color: var(--color-black);
     overflow-x: hidden;
-    min-height: 100vh;
+    height: 100%;    
 }
 
+html {
+    height: 100%;
+}
+main {
+    width:84vw; /* to not show  under the side  deco svg */
+    text-align: center;
+    z-index: 420;
+    margin-bottom: 3.2rem;
+}
+/* Main Content */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    overflow-y: auto;
+    position: relative;
+    margin-top: 0;
+}
 /* Header */
 header {
     width: 100%;
@@ -61,7 +79,6 @@ header {
     z-index: 1000;
     background-color: var(--color-white);
 }
-
 /* Ticker */
 .ticker-wrap {
     width: 100%;
@@ -73,12 +90,10 @@ header {
     padding: 0.5rem 0;
     z-index: 1100;
 }
-
 .ticker {
     display: flex;
-    animation: marquee 20s linear infinite;
+    animation: marquee 30s linear infinite;
 }
-
 .item {
     display: inline-block;
     padding: 0 2rem;
@@ -87,7 +102,6 @@ header {
     font-weight: bold;
     line-height: 2rem;
 }
-
 @keyframes marquee {
     0% {
         transform: translateX(0);
@@ -96,7 +110,6 @@ header {
         transform: translateX(-100%);
     }
 }
-
 /* Navigation */
 nav.main-nav {
     width: 100%;
@@ -107,7 +120,6 @@ nav.main-nav {
     min-height: 2.3rem;
     z-index: 900;
 }
-
 .nav-underline {
     width: 100%;
     height: 0.5rem;
@@ -117,7 +129,6 @@ nav.main-nav {
     box-shadow: var(--box-shadow);
     z-index: 1000;
 }
-
 .logo-box {
     width: 8.36rem;
     display: flex;
@@ -126,41 +137,37 @@ nav.main-nav {
     position: relative;
     overflow: visible;
 }
-
 .logo-box img {
     height: 100%;
     width: auto;
 }
-
 .logo-box-right img {
-    transform: scaleX(-1); /* Flip the logo horizontally */
+    transform: scaleX(-1);
 }
-
 .overlay-text-left {
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translateX(5%) translateY(-35%);
+    transform: translateX(5%) translateY(-33%);
     color: var(--color-blue);
     font-size: 2.8rem;
     font-weight: bold;
     pointer-events: none;
     text-align: left;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    -webkit-text-stroke: 0.5px var(--color-black);
     z-index: 1300;
 }
-
 .overlay-text-right {
     position: absolute;
     top: 50%;
     right: 0;
-    transform: translateX(-5%) translateY(-35%);
+    transform: translateX(-5%) translateY(-33%);
     color: var(--color-blue);
     font-size: 2.8rem;
     font-weight: bold;
     pointer-events: none;
     text-align: right;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    -webkit-text-stroke: 0.5px var(--color-black);
     z-index: 1300;
 }
 
@@ -170,6 +177,10 @@ nav.main-nav {
     align-items: center;
     flex-grow: 1;
 }
+.nav-links a:hover {
+    color: var(--color-blue);
+}
+
 
 .nav-links a {
     color: var(--color-white);
@@ -188,7 +199,7 @@ nav.main-nav {
     position: absolute;
     left: -1.2rem;
     top: 40%;
-    transform: translateY(-50%);
+    transform: translateY(-45.3%);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -208,160 +219,26 @@ nav.main-nav {
     display: flex;
     flex-direction: column;
 }
-
-.flex-right {
-    z-index: 900;
-}
-
-/* Main Content */
-.main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-grow: 1;
-    overflow-y: auto;
-    position: relative;
-    margin-top: 0; /* Ensure no hardcoded offsets */
-}
-
-.frame-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.svg-wrapper {
-    position: relative;
-    width: 80%;
-    max-width: 900px;
-    height: auto;
-}
-
-.svg-frame {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.central-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--color-black);
-    text-align: center;
-    z-index: 1;
+.flex-righ {
     pointer-events: none;
-}
-
-.post-details-container {
-    margin-top: 1rem;
-}
-
-.post-details p {
-    font-size: 1rem;
-    color: var(--color-black);
-}
-
-/* Side Decorations */
-.side-deco {
-    position: fixed;
-    top: 0;
-    width: 2rem;
-    height: 100vh;
-    background: url("/ui/side-deco.svg") no-repeat center;
-    background-size: contain;
-}
-
-.side-deco.left {
-    left: 0;
-}
-
-.side-deco.right {
-    right: 0;
-    transform: scaleX(-1);
-}
-
-/* Side Bar starts after side-deco */
-.side-bar {
-    position: fixed;
-    top: 0;
-    width: 6rem;
-    height: 100vh;
-    background-color: var(--color-black);
-}
-
-.side-bar.left {
-    left: calc(2rem); /* Start after the side-deco */
-}
-
-.side-bar.right {
-    right: calc(2rem);
-}
-
-/* White Bar starts after side-bar */
-.side-white-bar {
-    position: fixed;
-    top: 0;
-    width: 0.5rem;
-    height: 100vh;
-    background-color: var(--color-white);
-    border-left: 2px solid var(--color-black);
-}
-
-.side-white-bar.left {
-    left: calc(2.3rem + 6rem); /* Start after side-deco and side-bar */
-}
-
-.side-white-bar.right {
-    right: calc(2rem + 6rem);
-}
-
-main {
-    width: 100%;
-    padding: 0 8.43rem 0 8.43rem;
-    text-align: center;
-    z-index: 420;
-    margin-bottom: 3.2rem;
-}
-
-/* Footer */
-footer {
-    padding: 0.5rem 2rem;
-    border-top: 1px solid var(--color-black);
-    background-color: var(--color-white);
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    gap: 0.5rem;
-    position: fixed;
-    bottom: 0;
-    width: calc(100% - 16.86rem); /* Considering side bars */
     z-index: 800;
 }
 
-.footer-logo {
-    width: 1.5rem;
+.flex-left {
+    pointer-events: none;
+    z-index: 800;
 }
 
-.footer-content {
-    max-width: 25rem;
-    text-align: left;
-    font-size: 0.8rem;
-    line-height: 1rem;
-    color: var(--color-black);
-}
+
+
+
+
 
 /* Exhibition List */
 .list-container {
     list-style: none;
     padding: 0;
-    margin: 0;
+    /* margin: 0  2rem 0 2rem; Is not see  below the svg side deco */
     width: 100%;
 }
 
@@ -394,7 +271,7 @@ footer {
 }
 
 .list-item:hover .list-link {
-    color: var(--color-white);
+    color: var(--color-blue);
 }
 
 .bullet-point {
@@ -408,125 +285,3 @@ footer {
     color: var(--color-blue);
 }
 
-/* EXHIBITION SINGLE PAGE SETUP */
-
-/* Small Vert Tittle */
-.exhbition-small-title {
-    width: 108rem;
-    background-color: var(--color-black);
-    color: var(--color-blue);
-    padding: 0.5rem 0.4rem;
-    position: fixed;
-    text-align: left;
-    font-size: 0.8em;
-    z-index: 800; /* Below the card */
-}
-
-.content-card-container {
-    width: 100%;
-    height: calc(100vh - 6rem);
-    display: flex;
-    justify-content: center;
-    overflow-y: auto;
-    padding: 2rem 0;
-    z-index: 900; /* Higher than the title */
-}
-
-.content-card {
-    position: absolute; /* Ensures it is on top */
-    top: 0; /* Start at the top of its container */
-    width: 60%;
-    max-width: 50rem;
-    background-color: var(--color-white);
-    box-shadow: var(--box-shadow);
-    padding: 1.5rem;
-    border-radius: 0 2rem 0 0;
-    z-index: 900; /* On top of the title */
-}
-
-
-
-
-/* The exhition content */
-
-.header-section {
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    text-align: left;
-    align-items: baseline;
-    margin-bottom: 1rem;
-}
-
-.header-section h1 {
-    font-family: var(--font-heading);
-    font-size: 3.5rem;
-    font-weight: bold;
-    line-height: 1;
-    color: var(--color-black);
-}
-
-.header-section .dates {
-    font-size: 2rem;
-    font-weight: 400;
-    color: var(--color-black);
-    text-align: right;
-}
-
-.number-sequence {
-    display: flex;
-    gap: 1rem;
-    font-size: 1.2rem;
-    font-family: var(--font-light);
-    color: var(--color-black);
-    margin-bottom: 1.5rem;
-}
-
-.decorative-svg {
-    position: absolute;
-    top: 10%;
-    left: 0;
-    width: 100%;
-    pointer-events: none;
-    z-index: 850; /* Behind content but above image */
-    opacity: 0.8; /* Semi-transparent effect */
-}
-
-.decorative-svg img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.featured-image {
-    position: relative;
-    width: 100%;
-    margin-bottom: 1.5rem;
-}
-
-.featured-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 0.5rem;
-}
-
-.content-section {
-    font-size: 1rem;
-    line-height: 1.5;
-    font-family: var(--font-main);
-    color: var(--color-black);
-    text-align: justify;
-
-}
-/* Exhibition Photo Numbers */
-.number-sequence span {
-    cursor: pointer;
-    font-size: 18px;
-    color: #666;
-}
-
-.number-sequence span.active {
-    font-weight: bold;
-    text-decoration: underline;
-    color: #000;
-}

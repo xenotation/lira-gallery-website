@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+
+  <head>
+    {{- partial "head.html" . -}}
+    <link rel="stylesheet" href="{{ "css/base.css" | relURL }}">  
+  </head>
+
+  <body>
+
+    {{- partial "header.html" . -}}
+
+    <div class="page-flex-container">
+
+      <div class="flex-deco-left">
+        <img src="{{ "ui/side-deco.svg" | relURL }}" alt="Left Decoration" />
+        <div class="black-bar-left"></div>
+      </div>
+
+
+      <div class="flex-main">
+        {{- block "main" . }}{{- end }}
+
+        {{- partial "footer.html" . -}}
+
+      </div>
+      <div class="flex-deco-right">
+        <img src="{{ "ui/side-deco.svg" | relURL }}" alt="Left Decoration" />
+        <div class="black-bar-right"></div>
+      </div>
+    </div>
+
+    <script src="/js/time.js"></script>
+  </body>
+</html>

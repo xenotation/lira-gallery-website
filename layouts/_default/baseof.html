@@ -2,7 +2,6 @@
 <html lang="{{ .Site.Language.Lang }}">
   <head>
     {{- partial "head.html" . -}}
-    <link rel="stylesheet" href="{{ "css/base.css" | relURL }}">  
   </head>
   <body>
     <div class="page-layout">
@@ -25,7 +24,7 @@
         <div class="main-container">
           <main>
             {{- block "main" . }}{{- end }}
-            {{- partial "footer.html" . -}}
+
           </main>
 
         </div>
@@ -42,6 +41,7 @@
           </div>
 
         </div>
+
     </div>
     <script src="/js/time.js"></script>
   </body>

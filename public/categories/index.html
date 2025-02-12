@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My site</title>
 
-  </head><link rel="stylesheet" href="/css/base.css">  
-  </head>
+    <link rel="stylesheet" href="/css/base.css">  
+    <link rel="stylesheet" href="/css/side-bars.css">  
+    <link rel="stylesheet" href="/css/footer.css">  
+    <link rel="stylesheet" href="/css/single.css">  
+    <title> Моят сайт </title>
+
+
+  </head></head>
   <body>
     <div class="page-layout"><header>
   <div class="ticker-wrap">
@@ -41,10 +46,13 @@
   </div>
 
   <nav class="main-nav">
+    
+    <a href="/" class="logo-link">
       <div class="logo-box logo-box-left">
-          <img src="/ui/lira-logo-box.svg" alt="Lira Logo">
-          <div class="overlay-text-left">Лира</div>
+        <img src="/ui/lira-logo-box.svg" alt="Lira Logo">
+        <div class="overlay-text-left">Лира</div>
       </div>
+    </a>
 
       <div class="nav-links">
           
@@ -84,18 +92,22 @@
         <div class="flex-main">
         <div class="main-container">
           <main>
-<section>
   <ul class="list-container">
     
-  </ul>
-</section>
-<footer>
-    <img src="/ui/ncf.svg" alt="Footer Logo" class="footer-logo" />
-    <div class="footer-content">
-      Проектът се осъществява с подкрепата на Национален фонд „Култура“, програма „Дебюти“.
+  </ul><footer>
+  <div class="footer-inner-container">
+    <div class="footer-divider"></div>
+    <div class="footer-content-wrapper">
+      <img src="/ui/ncf.svg" alt="Footer Logo" class="footer-logo" />
+      <div class="footer-content">
+        Проектът се осъществява с подкрепата на Национален фонд „Култура“, програма „Дебюти“.
+      </div>
     </div>
-  </footer>
-  </main>
+  </div>
+</footer>
+
+
+          </main>
 
         </div>
       </div>
@@ -111,6 +123,7 @@
           </div>
 
         </div>
+
     </div>
     <script src="/js/time.js"></script>
   </body>

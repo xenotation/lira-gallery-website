@@ -1,0 +1,50 @@
+/* Footer - Full Width */
+footer {
+    background-color: var(--color-white);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 2rem 0.5rem 2rem;
+    z-index: 800;
+    display: flex;
+    justify-content: center; /* Centers the inner container */
+}
+
+/* Inner Container - Adjustable Width */
+.footer-inner-container {
+    width: 90%; /* Adjust this to change the width */
+    max-width: 1250px; /* Optional max width */
+}
+
+/* Divider */
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-black);
+    margin-bottom: 0.5rem;
+}
+
+/* Logo & Text Wrapper */
+.footer-content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: flex-start; /* Ensures left alignment */
+}
+
+/* Logo */
+.footer-logo {
+    width: 1.5rem;
+    height: auto;
+}
+
+/* Text */
+.footer-content {
+    font-size: 0.8rem;
+    color: var(--color-black);
+    max-width: 23rem;
+    text-align: left;
+    align-items: baseline;
+
+}

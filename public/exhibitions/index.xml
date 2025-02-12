@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Exhibitions on Моят сайт</title>
-    <link>http://localhost:1313/exhibitions/</link>
+    <link>//192.168.5.102:8080/exhibitions/</link>
     <description>Recent content in Exhibitions on Моят сайт</description>
     <generator>Hugo</generator>
     <language>bg-bg</language>
     <lastBuildDate>Sat, 08 Feb 2025 09:12:25 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/exhibitions/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//192.168.5.102:8080/exhibitions/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Стогодишнияtт Прозорец 1</title>
-      <link>http://localhost:1313/exhibitions/the-hundred-year-window/</link>
+      <title>Стогодишният Прозорец</title>
+      <link>//192.168.5.102:8080/exhibitions/the-hundred-year-window/</link>
       <pubDate>Sat, 08 Feb 2025 09:12:25 +0200</pubDate>
-      <guid>http://localhost:1313/exhibitions/the-hundred-year-window/</guid>
+      <guid>//192.168.5.102:8080/exhibitions/the-hundred-year-window/</guid>
       <description>Стогодишният прозорец на Ния Ценкова е първата изложба в новооткритатата галерия „Лира“. Заглавието произтича именно от готовия предмет, с който художничката работи. Произведението отпраща към изоставените или занемарени сгради – човешките здания, оставени на произвола. Интуицията на художничката я води от обикновената тухла, през открехнатия или директно счупен прозорец, чак до порутения покрив. Разруха, която повсеместно е обхванала българските градове и села, довела до или произтекла от изоставянето на немалко от тях.</description>
     </item>
     <item>
       <title>Стогодишнияtт Прозорец 4</title>
-      <link>http://localhost:1313/exhibitions/the-example-4/fourt/</link>
+      <link>//192.168.5.102:8080/exhibitions/the-example-4/fourt/</link>
       <pubDate>Fri, 10 Jan 2025 09:12:25 +0200</pubDate>
-      <guid>http://localhost:1313/exhibitions/the-example-4/fourt/</guid>
+      <guid>//192.168.5.102:8080/exhibitions/the-example-4/fourt/</guid>
       <description></description>
     </item>
     <item>
       <title>Стогодишнияtт Прозорец 5</title>
-      <link>http://localhost:1313/exhibitions/the-example-2/second/</link>
+      <link>//192.168.5.102:8080/exhibitions/the-example-2/second/</link>
       <pubDate>Thu, 09 Jan 2025 09:12:25 +0200</pubDate>
-      <guid>http://localhost:1313/exhibitions/the-example-2/second/</guid>
+      <guid>//192.168.5.102:8080/exhibitions/the-example-2/second/</guid>
       <description></description>
     </item>
     <item>
       <title>Стогодишнияtт Прозорец 420</title>
-      <link>http://localhost:1313/exhibitions/the-example-1/</link>
+      <link>//192.168.5.102:8080/exhibitions/the-example-1/</link>
       <pubDate>Wed, 08 Jan 2025 09:12:25 +0200</pubDate>
-      <guid>http://localhost:1313/exhibitions/the-example-1/</guid>
+      <guid>//192.168.5.102:8080/exhibitions/the-example-1/</guid>
       <description>Стогодишният прозорец на Ния Ценкова е първата изложба в новооткритатата галерия „Лира“. Заглавието произтича именно от готовия предмет, с който художничката работи. Произведението отпраща към изоставените или занемарени сгради – човешките здания, оставени на произвола. Интуицията на художничката я води от обикновената тухла, през открехнатия или директно счупен прозорец, чак до порутения покрив. Разруха, която повсеместно е обхванала българските градове и села, довела до или произтекла от изоставянето на немалко от тях.</description>
     </item>
     <item>
       <title>Стогодишнияtт Прозорец 6</title>
-      <link>http://localhost:1313/exhibitions/the-example-3/thrid/</link>
+      <link>//192.168.5.102:8080/exhibitions/the-example-3/thrid/</link>
       <pubDate>Wed, 08 Jan 2025 09:12:25 +0200</pubDate>
-      <guid>http://localhost:1313/exhibitions/the-example-3/thrid/</guid>
+      <guid>//192.168.5.102:8080/exhibitions/the-example-3/thrid/</guid>
       <description></description>
     </item>
     <item>
       <title>Стогодишнияtт Прозорец 7</title>
-      <link>http://localhost:1313/exhibitions/the-example-7/severn/</link>
+      <link>//192.168.5.102:8080/exhibitions/the-example-7/severn/</link>
       <pubDate>Wed, 08 Jan 2025 09:12:25 +0200</pubDate>
-      <guid>http://localhost:1313/exhibitions/the-example-7/severn/</guid>
+      <guid>//192.168.5.102:8080/exhibitions/the-example-7/severn/</guid>
       <description></description>
     </item>
     <item>
       <title>Стогодишнияtт Прозорец 2</title>
-      <link>http://localhost:1313/exhibitions/the-example-5/five/</link>
+      <link>//192.168.5.102:8080/exhibitions/the-example-5/five/</link>
       <pubDate>Sun, 05 Jan 2025 09:12:25 +0200</pubDate>
-      <guid>http://localhost:1313/exhibitions/the-example-5/five/</guid>
+      <guid>//192.168.5.102:8080/exhibitions/the-example-5/five/</guid>
       <description></description>
     </item>
     <item>
       <title>Стогодишнияtт Прозорец 3</title>
-      <link>http://localhost:1313/exhibitions/the-other-thing/fix/</link>
+      <link>//192.168.5.102:8080/exhibitions/the-other-thing/fix/</link>
       <pubDate>Sun, 05 Jan 2025 09:12:25 +0200</pubDate>
-      <guid>http://localhost:1313/exhibitions/the-other-thing/fix/</guid>
+      <guid>//192.168.5.102:8080/exhibitions/the-other-thing/fix/</guid>
       <description></description>
     </item>
   </channel>

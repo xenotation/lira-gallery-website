@@ -15,10 +15,13 @@
   </div>
 
   <nav class="main-nav">
+    <!-- Wrap logo-box-left in a link to the home page -->
+    <a href="/" class="logo-link">
       <div class="logo-box logo-box-left">
-          <img src="/ui/lira-logo-box.svg" alt="Lira Logo">
-          <div class="overlay-text-left">Лира</div>
+        <img src="/ui/lira-logo-box.svg" alt="Lira Logo">
+        <div class="overlay-text-left">Лира</div>
       </div>
+    </a>
 
       <div class="nav-links">
           {{ range .Site.Menus.main }}

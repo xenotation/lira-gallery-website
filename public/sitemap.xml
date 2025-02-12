@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/exhibitions/</loc>
+    <loc>//192.168.5.102:8080/exhibitions/</loc>
     <lastmod>2025-02-08T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>//192.168.5.102:8080/</loc>
     <lastmod>2025-02-08T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/exhibitions/the-hundred-year-window/</loc>
+    <loc>//192.168.5.102:8080/exhibitions/the-hundred-year-window/</loc>
     <lastmod>2025-02-08T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/exhibitions/the-example-4/fourt/</loc>
+    <loc>//192.168.5.102:8080/exhibitions/the-example-4/fourt/</loc>
     <lastmod>2025-01-10T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/exhibitions/the-example-2/second/</loc>
+    <loc>//192.168.5.102:8080/exhibitions/the-example-2/second/</loc>
     <lastmod>2025-01-09T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/exhibitions/the-example-1/</loc>
+    <loc>//192.168.5.102:8080/exhibitions/the-example-1/</loc>
     <lastmod>2025-01-08T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/exhibitions/the-example-3/thrid/</loc>
+    <loc>//192.168.5.102:8080/exhibitions/the-example-3/thrid/</loc>
     <lastmod>2025-01-08T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/exhibitions/the-example-7/severn/</loc>
+    <loc>//192.168.5.102:8080/exhibitions/the-example-7/severn/</loc>
     <lastmod>2025-01-08T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/exhibitions/the-example-5/five/</loc>
+    <loc>//192.168.5.102:8080/exhibitions/the-example-5/five/</loc>
     <lastmod>2025-01-05T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/exhibitions/the-other-thing/fix/</loc>
+    <loc>//192.168.5.102:8080/exhibitions/the-other-thing/fix/</loc>
     <lastmod>2025-01-05T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>//192.168.5.102:8080/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>//192.168.5.102:8080/tags/</loc>
   </url>
 </urlset>

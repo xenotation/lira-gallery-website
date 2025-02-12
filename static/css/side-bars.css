@@ -1,0 +1,58 @@
+/* Global Variables */
+:root {
+    --logo-box: 8.36rem;
+    --svg-side-deco: 2rem;
+}
+
+/* Side Decorations */
+.side-deco {
+    position: fixed;
+    top: 0;
+    width: var(--svg-side-deco);
+    background: url("/ui/side-deco.svg") no-repeat center;
+}
+.side-deco.left {
+    left: 0;
+    z-index: 810;
+}
+.side-deco.right {
+    right: 0;
+    z-index: 810;
+}
+
+/* Side Bar starts after side-deco */
+.side-bar {
+    position: fixed;
+    top: 0;
+    width: calc((var(--logo-box) -  var(--svg-side-deco)) - 0.2rem); /* For some reson controls white bar by last number */
+    height: 100vh;
+    background-color: var(--color-black);
+    z-index: 800;
+}
+
+.side-bar.left {
+    left: calc(var(--svg-side-deco) -  0.2rem); /* Start after the side-deco with small displacement*/
+}
+
+.side-bar.right {
+    right: calc(var(--svg-side-deco) -  0.2rem);
+}
+
+/* Side White Bar */
+.side-white-bar {
+    position: fixed;
+    top: 0;
+    width: 0.5rem; /* 1rem thick */
+    height: 100vh;
+    background-color: white;
+    border: 1px solid black; /* 1px black border */
+    z-index: 805; /* Below side-bar but above other elements */
+}
+
+.side-white-bar.left {
+    left: calc(var(--logo-box) - 0.5rem); 
+}
+
+.side-white-bar.right {
+    right: calc(var(--logo-box) - 0.5rem); 
+}
