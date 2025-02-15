@@ -17,6 +17,12 @@
     <loc>//192.168.5.102:8080/exhibitions/the-example-2/second/</loc>
     <lastmod>2025-01-09T09:12:25+02:00</lastmod>
   </url><url>
+    <loc>//192.168.5.102:8080/gallery/</loc>
+    <lastmod>2025-01-08T09:12:25+02:00</lastmod>
+  </url><url>
+    <loc>//192.168.5.102:8080/gallery/gallery/</loc>
+    <lastmod>2025-01-08T09:12:25+02:00</lastmod>
+  </url><url>
     <loc>//192.168.5.102:8080/exhibitions/the-example-1/</loc>
     <lastmod>2025-01-08T09:12:25+02:00</lastmod>
   </url><url>

@@ -147,3 +147,13 @@
     width: 3.2rem;
     height: auto;
 }
+
+.artist-circles {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.artist-circles img {
+    width: 13.2rem;
+    height: auto;
+}

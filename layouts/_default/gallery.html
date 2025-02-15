@@ -1,0 +1,35 @@
+{{ define "main" }}
+    <div class="exhibition-title">{{ .Title }}&nbsp;/&nbsp;{{ .Params.artist }}</div>
+
+    <div class="content-card">
+        <div class="header-section">
+            <h1>{{ .Title }}</h1>
+        </div>
+
+        <!-- Image Section -->
+        <div class="featured-image">
+            <img id="main-image" src="{{ with (.Resources.ByType "image").Get 0 }}{{ .RelPermalink }}{{ end }}" alt="{{ .Title }}" />
+        </div>
+
+        <!-- Exhibition Content -->
+        <div class="content-section">
+            {{ .Content }}
+
+            <!-- Artist Section -->
+            <div class="artist-section">
+                <div class="name-stars-wrapper">
+                    <div class="artist-name">{{ .Params.artist }}</div>
+                    <div class="artist-circles">
+                        <img src="{{ "ui/circles.svg" | relURL }}" alt="Lira Circles" />
+                    </div>
+                </div>
+                <div class="team">{{ .Params.bio }}</div>
+                {{/*  make this into a list  */}}
+            </div>
+        </div>
+    </div>
+
+    {{- partial "footer.html" . -}}
+
+
+{{ end }}
