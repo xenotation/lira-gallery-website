@@ -1,3 +1,20 @@
 {{ define "main" }}
+<div class="exhibition-wrapper">
+    <!-- Main Button with Decorative SVG -->
+    <div class="button-wrapper">
+            <img class="lander-svg" src="{{ "ui/lander.svg" | relURL }}" alt="Decorative Element" />
+            <a href="{{ with (index .Site.RegularPages.ByDate.Reverse 0) }}{{ .RelPermalink }}{{ end }}" class="button-title">
+                {{ with (index .Site.RegularPages.ByDate.Reverse 0) }}{{ .Title }}{{ end }}
+            </a>
+    </div>
+        
+        <!-- Dates -->
+        <div class="small-lander-title">
+            {{ with (index .Site.RegularPages.ByDate.Reverse 0) }}
+                {{ .Title }}&nbsp;/&nbsp;{{ .Params.artist }}&nbsp;/&nbsp;{{ .Params.datestart }} - {{ .Params.dateend }}
+            {{ end }}
+        </div>
+    </div>
 
+    {{- partial "footer.html" . -}}
 {{ end }}

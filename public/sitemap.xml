@@ -20,7 +20,10 @@
     <loc>//192.168.5.102:8080/gallery/</loc>
     <lastmod>2025-01-08T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>//192.168.5.102:8080/gallery/gallery/</loc>
+    <loc>//192.168.5.102:8080/archive/</loc>
+    <lastmod>2025-01-08T09:12:25+02:00</lastmod>
+  </url><url>
+    <loc>//192.168.5.102:8080/contacts/</loc>
     <lastmod>2025-01-08T09:12:25+02:00</lastmod>
   </url><url>
     <loc>//192.168.5.102:8080/exhibitions/the-example-1/</loc>

@@ -1,11 +1,11 @@
 {{ define "main" }}
-
     <div class="exhibition-title">{{ .Title }}&nbsp;/&nbsp;{{ .Params.artist }}</div>
 
     <div class="content-card">
         <div class="header-section">
-            <h1>{{ .Title }}</h1>
-            <div class="dates">{{ .Params.datestart }} {{ .Params.dateend }}</div>
+            <div class="header-archive">
+                <h1>{{ .Title }}</h1>
+            </div>
         </div>
 
         <!-- Number sequence under title with data-src -->
@@ -15,11 +15,6 @@
                 <span data-src="{{ $file.RelPermalink }}">{{ printf "%02d" $counter }}</span>
                 {{ $counter = add $counter 1 }}
             {{ end }}
-        </div>
-
-        <!-- Decorative SVG -->
-        <div class="decorative-svg">
-            <img src="{{ "ui/decorative-overlay.svg" | relURL }}" alt="Decorative Overlay" />
         </div>
 
         <!-- Image Section -->

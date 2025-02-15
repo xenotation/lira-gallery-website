@@ -23,7 +23,13 @@
                         <img src="{{ "ui/circles.svg" | relURL }}" alt="Lira Circles" />
                     </div>
                 </div>
-                <div class="team">{{ .Params.bio }}</div>
+                <div class="team">
+                    <ul>
+                        {{ range .Params.team }}
+                            <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
                 {{/*  make this into a list  */}}
             </div>
         </div>

@@ -1,0 +1,26 @@
+{{ define "main" }}
+    <div class="exhibition-title">{{ .Title }}&nbsp;/&nbsp;{{ .Params.artist }}</div>
+
+    <div class="content-card">
+        <div class="header-section">
+            <h1>{{ .Title }}</h1>
+            <div class="dates">Галерия</br>Лира</div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3814.68157671071!2d23.32765197673844!3d42.69084221413856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa857497c8e23d%3A0x2d68d5abfab32261!2sSofia%20Center%2C%20General%20Gurko%20St%2045%2C%201000%20Sofia!5e1!3m2!1sen!2sbg!4v1739611309240!5m2!1sen!2sbg" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <!-- Page Content -->
+        <div class="content-section-contacts">
+            {{ .Content }}
+        </div>
+    </div>
+
+    {{- partial "footer.html" . -}}
+{{ end }}

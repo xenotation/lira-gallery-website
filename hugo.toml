@@ -28,6 +28,15 @@ languageCode = "bg-bg"
     url = "/contacts"
     weight = 4
 
+
+disableKinds = ["taxonomy", "term"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
 # Ticker  Items
 
 [[params.tickerItems]]
