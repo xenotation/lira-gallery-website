@@ -2,13 +2,13 @@
     <div class="exhibition-title">{{ .Title }}&nbsp;/&nbsp;{{ .Params.artist }}</div>
 
     <div class="content-card">
-        <div class="header-section">
+        <div class="header-section-gallery">
             <h1>{{ .Title }}</h1>
         </div>
 
         <!-- Image Section -->
         <div class="featured-image">
-            <img id="main-image" src="{{ with (.Resources.ByType "image").Get 0 }}{{ .RelPermalink }}{{ end }}" alt="{{ .Title }}" />
+            <img src="{{ "images/lira-3D.gif" | relURL }}" alt="Decorative Overlay" />
         </div>
 
         <!-- Exhibition Content -->

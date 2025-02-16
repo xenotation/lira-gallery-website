@@ -18,7 +18,7 @@
         </div>
 
         <!-- Image Section -->
-        <div class="featured-image">
+        <div class="featured-image-archive">
             <img id="main-image" src="{{ with (.Resources.ByType "image").Get 0 }}{{ .RelPermalink }}{{ end }}" alt="{{ .Title }}" />
         </div>
 
@@ -29,15 +29,22 @@
             <!-- Artist Section -->
             <div class="artist-section">
                 <div class="name-stars-wrapper">
-                    <div class="artist-name">{{ .Params.artist }}</div>
+                    <h2 class="artist-name">{{ .Params.artist }}</h2>
                     <div class="artist-stars">
                         <img src="{{ "ui/star.svg" | relURL }}" alt="Lira Stat" />
                         <img src="{{ "ui/star.svg" | relURL }}" alt="Lira Stat" />
                         <img src="{{ "ui/star.svg" | relURL }}" alt="Lira Stat" />
                     </div>
                 </div>
-                
                 <div class="bio">{{ .Params.bio }}</div>
+
+                <a href="#" class="black-button">
+                    ЧЕРТЕЖИ 
+                    <img src="{{ "ui/arrow.svg" | relURL }}" alt="Arrow" class="arrow">
+                </a>
+                
+                
+                
             </div>
         </div>
     </div>

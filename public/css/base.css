@@ -87,7 +87,7 @@ header {
     position: relative;
     background-color: var(--color-white);
     box-shadow: var(--box-shadow);
-    padding: 0.5rem 0;
+    /* padding: 0.5rem 0; */
     z-index: 1100;
 }
 .ticker {
@@ -122,7 +122,7 @@ nav.main-nav {
 }
 .nav-underline {
     width: 100%;
-    height: 0.5rem;
+    height: 0.3rem;
     position: relative;
     background-color: var(--color-white);
     border-bottom: 2px solid var(--color-black);
@@ -141,8 +141,13 @@ nav.main-nav {
     height: 100%;
     width: auto;
 }
+.logo-box-right {
+    justify-content: right;
+}
+
 .logo-box-right img {
     transform: scaleX(-1);
+
 }
 .overlay-text-left {
     position: absolute;
@@ -185,7 +190,7 @@ nav.main-nav {
 .nav-links a {
     color: var(--color-white);
     text-decoration: none;
-    font-size: 1.125rem;
+    font-size: 1rem;
     margin: 0 8%;
     text-transform: uppercase;
     position: relative;
@@ -199,7 +204,7 @@ nav.main-nav {
     position: absolute;
     left: -1.2rem;
     top: 40%;
-    transform: translateY(-45.3%);
+    transform: translateY(-52%);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -207,6 +212,14 @@ nav.main-nav {
 .nav-links a:hover:before {
     opacity: 1;
 }
+
+@media (max-width: 768px) { /* Adjust for screens below 768px (phones) */
+    .logo-box {
+        width: 4.20rem;
+    }
+}
+
+
 
 /* Flex setup for basedof bg */
 .flex-bg {
@@ -231,13 +244,12 @@ nav.main-nav {
 
 
 /*  MISC PAGES */
-
 /* General Wrapper */
 .exhibition-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 23vh;
 }
 
 /* Decorative SVG (Lander) */
@@ -246,11 +258,21 @@ nav.main-nav {
     width: 100%;
 }
 
+.lander-svg {
+    height: 100%;
+}
+
 /* Ensure the wrapper exists and has space */
 .button-wrapper {
     position: relative;
     width: 100%;
     max-width: 42vw;
+    box-shadow: var(--box-shadow);
+    border-radius: 2rem; 
+}
+.button-wrapper:active {
+    transform: scale(0.95); /* Shrinks slightly when clicked */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adjusted shadow */
 }
 
 /* Center the Button on top of the SVG */
@@ -259,7 +281,7 @@ nav.main-nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3rem;
+    font-size: 3.2vw;
     font-weight: bold;
     text-transform: uppercase;
     -webkit-text-stroke: 1px var(--color-black);
@@ -271,17 +293,50 @@ nav.main-nav {
 
 /* Ensure the small title is below */
 .small-lander-title {
-    font-size: 1rem;
+    font-size: 1rem;  /* Make  this whole thing disasspear on phones*/
     text-align: center;
     margin-top: 1rem;
     z-index: 200;
 }
 
-
 /* Gallery Page */
 
 .team ul{
     list-style: none;
+}
+
+.header-section-gallery {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    text-align: left;
+    align-items: baseline;
+    margin-bottom: 1rem;
+    max-width: 6rem;
+}
+
+.header-section-gallery h1  {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Archive */
+.featured-image-archive {
+    position: relative;
+    width: 100%;
+    height: 22.8rem;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    border: 1px var(--color-black); 
+
+}
+
+.featured-image-archive img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;  
 }
 
 /* Contacts */
@@ -292,7 +347,7 @@ nav.main-nav {
 }
 .map iframe {
     width: 100%;
-    height: 60vh; 
+    height: 40vh; 
     border-radius: 20px; 
 }
 .content-section-contacts {
@@ -362,3 +417,25 @@ nav.main-nav {
     color: var(--color-blue);
 }
 
+.black-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 2rem; 
+    text-decoration: none;
+
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-top: 1rem;
+}
+
+.black-button .arrow {
+    width: 2.5rem; 
+    height: auto;
+}

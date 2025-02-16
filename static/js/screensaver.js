@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         clearTimeout(timeout);
         cancelAnimationFrame(animationFrame);
         isMoving = false;
-        timeout = setTimeout(startAnimation, 10000); // Start moving after 5s idle
+        timeout = setTimeout(startAnimation, 8000); // Start moving after 5s idle
     }
 
     document.addEventListener("mousemove", resetTimer);

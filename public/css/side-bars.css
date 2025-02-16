@@ -56,3 +56,13 @@
 .side-white-bar.right {
     right: calc(var(--logo-box) - 0.5rem); 
 }
+
+
+/* Responsive Adjustment for Phones */
+@media (max-width: 768px) { /* Adjust for screens below 768px (phones) */
+    :root {
+        --svg-side-deco: 2rem; 
+        --logo-box: 4.2rem;
+    }
+    /* Right deco is till off screen and its no the flex-bg size ithink*/
+}
