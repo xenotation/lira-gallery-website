@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//192.168.5.102:8080/exhibitions/</loc>
-    <lastmod>2025-02-08T09:12:25+02:00</lastmod>
+    <lastmod>2025-02-21T09:12:25+02:00</lastmod>
   </url><url>
     <loc>//192.168.5.102:8080/</loc>
-    <lastmod>2025-02-08T09:12:25+02:00</lastmod>
+    <lastmod>2025-02-21T09:12:25+02:00</lastmod>
+  </url><url>
+    <loc>//192.168.5.102:8080/exhibitions/the-example-1/</loc>
+    <lastmod>2025-02-21T09:12:25+02:00</lastmod>
   </url><url>
     <loc>//192.168.5.102:8080/exhibitions/the-hundred-year-window/</loc>
     <lastmod>2025-02-08T09:12:25+02:00</lastmod>
@@ -24,9 +27,6 @@
     <lastmod>2025-01-08T09:12:25+02:00</lastmod>
   </url><url>
     <loc>//192.168.5.102:8080/contacts/</loc>
-    <lastmod>2025-01-08T09:12:25+02:00</lastmod>
-  </url><url>
-    <loc>//192.168.5.102:8080/exhibitions/the-example-1/</loc>
     <lastmod>2025-01-08T09:12:25+02:00</lastmod>
   </url><url>
     <loc>//192.168.5.102:8080/exhibitions/the-example-3/thrid/</loc>

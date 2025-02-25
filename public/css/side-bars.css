@@ -10,6 +10,7 @@
     top: 0;
     width: var(--svg-side-deco);
     background: url("/ui/side-deco.svg") no-repeat center;
+    background-color: white;
 }
 .side-deco.left {
     left: 0;
@@ -57,11 +58,10 @@
     right: calc(var(--logo-box) - 0.5rem); 
 }
 
-
 /* Responsive Adjustment for Phones */
 @media (max-width: 768px) { /* Adjust for screens below 768px (phones) */
     :root {
-        --svg-side-deco: 2rem; 
+        --svg-side-deco: 1.6rem; 
         --logo-box: 4.2rem;
     }
     /* Right deco is till off screen and its no the flex-bg size ithink*/

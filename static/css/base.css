@@ -4,27 +4,25 @@
     --color-white: #fff;
     --color-blue: #6699FF;
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    --font-main: "Helen2-Regular", sans-serif;
+    --font-regular: "Helen2-Regular", sans-serif;
     --font-heading: "Helen", sans-serif;
-    --font-light: "Helen-Light", sans-serif;
+    --font-main: "Helen-Light", sans-serif;
 }
 /* Font Faces */
 @font-face {
     font-family: 'Helen';
-    src: url('/fonts/Helen.otf') format('opentype');
-    font-weight: 700; /* Bold weight for headings */
+    src: url('/fonts/Helen-Bg-Light.otf') format('opentype');
+    font-weight: 600; /* Bold weight for headings */
 }
 
 @font-face {
     font-family: 'Helen2-Regular';
     src: url('/fonts/Helen2\ Bg\ Regular.otf') format('opentype');
-    font-weight: 400; /* Regular weight for body text */
 }
 
 @font-face {
     font-family: 'Helen-Light';
     src: url('/fonts/Helen-Bg-Light.otf') format('opentype');
-    font-weight: 300; /* Light weight for subtle text */
 }
 /* ////////////////////////// RESET //////////////////////////////// */
                 /* Remove Scroll Bars Everywhere */
@@ -41,6 +39,24 @@
     padding: 0;
     /* box-sizing: border-box; */
 }
+/* Selection */
+*::selection {
+    background: var(--color-blue);
+    color: var(--color-white);
+    text-shadow: rgb(255, 255, 255) 1px 0 1px;
+
+  }
+  *::-moz-selection {
+    background: var(--color-blue);
+    color: var(--color-white);
+  }
+  *::-webkit-selection {
+    background: var(--color-blue);
+    color: var(--color-white);
+  }
+
+
+
 /* ////////////////////////// BODY SETUP //////////////////////////////// */
 body {
     font-family: var(--font-main);
@@ -54,7 +70,7 @@ html {
     height: 100%;
 }
 main {
-    width:84vw; /* to not show  under the side  deco svg */
+    width:100%; /* to not show  under the side  deco svg */
     text-align: center;
     z-index: 420;
     margin-bottom: 3.2rem;
@@ -88,7 +104,7 @@ header {
     background-color: var(--color-white);
     box-shadow: var(--box-shadow);
     /* padding: 0.5rem 0; */
-    z-index: 1100;
+    z-index: 1300;
 }
 .ticker {
     display: flex;
@@ -97,9 +113,8 @@ header {
 .item {
     display: inline-block;
     padding: 0 2rem;
-    font-size: 1rem;
+    font-size: 1.2em;
     color: var(--color-black);
-    font-weight: bold;
     line-height: 2rem;
 }
 @keyframes marquee {
@@ -153,10 +168,10 @@ nav.main-nav {
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translateX(5%) translateY(-33%);
+    transform: translateX(0%) translateY(-40%);
     color: var(--color-blue);
-    font-size: 2.8rem;
-    font-weight: bold;
+    font-size: 3.8em; 
+    /* Change to rem please */
     pointer-events: none;
     text-align: left;
     -webkit-text-stroke: 0.5px var(--color-black);
@@ -166,10 +181,10 @@ nav.main-nav {
     position: absolute;
     top: 50%;
     right: 0;
-    transform: translateX(-5%) translateY(-33%);
+    transform: translateX(0%) translateY(-40%);
     color: var(--color-blue);
-    font-size: 2.8rem;
-    font-weight: bold;
+    font-size: 3.6em;
+
     pointer-events: none;
     text-align: right;
     -webkit-text-stroke: 0.5px var(--color-black);
@@ -211,12 +226,6 @@ nav.main-nav {
 
 .nav-links a:hover:before {
     opacity: 1;
-}
-
-@media (max-width: 768px) { /* Adjust for screens below 768px (phones) */
-    .logo-box {
-        width: 4.20rem;
-    }
 }
 
 
@@ -266,9 +275,9 @@ nav.main-nav {
 .button-wrapper {
     position: relative;
     width: 100%;
-    max-width: 42vw;
+    max-width: 46vw;
     box-shadow: var(--box-shadow);
-    border-radius: 2rem; 
+    border-radius: 2.3rem; 
 }
 .button-wrapper:active {
     transform: scale(0.95); /* Shrinks slightly when clicked */
@@ -281,10 +290,11 @@ nav.main-nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3.2vw;
+    font-size: 4vw;
     font-weight: bold;
     text-transform: uppercase;
-    -webkit-text-stroke: 1px var(--color-black);
+    -webkit-text-stroke: 3px var(--color-black);
+    paint-order: stroke fill;
     color: var(--color-white);
     text-align: center;
     z-index: 200;
@@ -293,11 +303,17 @@ nav.main-nav {
 
 /* Ensure the small title is below */
 .small-lander-title {
-    font-size: 1rem;  /* Make  this whole thing disasspear on phones*/
+    font-size: 1.4rem;  /* Make  this whole thing disasspear on phones*/
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 3rem;
     z-index: 200;
+    text-transform: uppercase;
 }
+
+.date-bold {
+    font-weight: bold;
+}
+
 
 /* Gallery Page */
 
@@ -316,27 +332,103 @@ nav.main-nav {
 }
 
 .header-section-gallery h1  {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 4rem;
+    line-height: 3rem;
+    font-family: var(--font-heading);
 }
 
 /* Archive */
 .featured-image-archive {
     position: relative;
     width: 100%;
-    height: 22.8rem;
+    height: 30rem;
     margin-bottom: 1.5rem;
     overflow: hidden;
-    border: 1px var(--color-black); 
-
 }
 
 .featured-image-archive img {
-    width: 100%;
-    height: 100%;
+    width: 99%;
+    height: 99%;
     object-fit: cover;
     object-position: center;
-    border-radius: 1rem;  
+    border-radius: 2rem;  
+    border: 2px solid var(--color-black); 
+}
+
+.header-archive h1 {
+    font-family: var(--font-main);
+    font-size: 4rem;
+    line-height: 1em;
+    text-align: left;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 0.5px var(--color-black);
+    text-transform: uppercase;
+}
+/* Blueprints */
+
+.content-card-blue {
+    width: 50%;
+    max-width: 55rem;
+    background-color: var(--color-black);
+    box-shadow: var(--box-shadow);
+    padding: 2vh 2rem 1.5rem 2rem;
+    border-radius: 0 3rem 0 0;
+    position: relative;
+    margin: -2.3rem auto auto auto; /* The third one control the distance from the bottom */
+    z-index: 900;
+}
+.artist-name-blue {
+    font-family: var(--font-standart);
+    font-size: 4rem;
+    color: var(--color-white);
+    line-height: 4rem;
+    text-transform: uppercase;
+}
+.number-sequence-blue {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.4rem;
+    font-family: var(--font-heading);
+    font-weight: bold;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+}
+.number-sequence-blue span {
+    cursor: pointer;
+    color: #929292;
+}
+
+.number-sequence-blue span.active {
+    font-weight: bold;
+    font-family: var(--font-regular);
+    text-decoration: underline;
+    color: #ffffff;
+}
+.featured-image-blue {
+    position: relative;
+    width: 100%;
+    height: 60rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+.featured-image-blue img {
+    width: 99%;
+    height: 99%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2rem;  
+    border: 2px solid var(--color-black); 
+}
+.download {
+    color: var(--color-white);
+    text-decoration: underline;
+    font-size: 1.2rem;
+    padding-right: 2rem;
+    text-align: right;
+}
+.content-card-blue .name-stars-wrapper .artist-stars {
+    filter: invert(1);
 }
 
 /* Contacts */
@@ -347,24 +439,33 @@ nav.main-nav {
 }
 .map iframe {
     width: 100%;
-    height: 40vh; 
-    border-radius: 20px; 
+    height: 50vh; 
+    border-radius: 3rem; 
 }
 .content-section-contacts {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0.5rem;
+    padding: 1rem;
     text-align: left;
     font-size: 1rem;
-    line-height: 1.2;
+    line-height: 1.2rem;
 }
-.exhibition-title {
-    font-size: 1.8rem;
+.header-section .gall-name {
+    font-family: var(--font-main);
+    font-size: 3.6em;
+    line-height: 1em;
+    text-align: right;
     font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 0.5px var(--color-black);
     text-transform: uppercase;
-
 }
+
+.contact-title {
+    font-size: 1.4em;
+}
+
 
 /* Exhibition List */
 .list-container {
@@ -416,7 +517,6 @@ nav.main-nav {
 .list-item:hover .bullet-point {
     color: var(--color-blue);
 }
-
 .black-button {
     display: flex;
     align-items: center;
@@ -429,13 +529,253 @@ nav.main-nav {
     text-transform: uppercase;
     border-radius: 2rem; 
     text-decoration: none;
-
-    width: 100%; 
+    max-width: 36vw; 
     box-sizing: border-box; 
-    margin-top: 1rem;
+    margin: 2rem auto 2rem auto;
 }
-
 .black-button .arrow {
     width: 2.5rem; 
     height: auto;
+}
+
+.form-text p {
+    font-size: 1.6rem;
+    margin: 0 0 1rem 0;
+}
+.list-title::after {
+    content: "\00a0/\00a0";
+  }
+  
+  .list-artist::after {
+    content: "\00a0/\00a0";
+  }
+
+/* Mobile */
+
+/* Mobile  Header */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide navigation links on mobile */
+    }
+
+    .ticker-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-black);
+        color: var(--color-white);
+        z-index: 1000;
+        box-shadow: var(--box-shadow);
+        padding: 0.5rem 0 0 0;
+    }
+
+    .ticker {
+        display: flex;
+        animation: marquee 30s linear infinite;
+    }
+
+    .item {
+        display: inline-block;
+        padding: 0 2rem;
+        font-size: 1rem;
+        color: var(--color-white);
+        font-weight: bold;
+        line-height: 2rem;
+    }
+
+    .main-nav {
+        background: none;
+        min-height: auto;
+    }
+
+    .logo-box {
+        width: 5rem; /* Adjust logo size */
+    }
+
+    .logo-box img {
+        z-index: 1100;
+    }
+
+    .logo-box-left  {
+        width: 5.6rem;
+    }
+
+    .overlay-text-left, .overlay-text-right {
+        -webkit-text-stroke: 0.3px var(--color-black);
+        font-size: 2.3rem;
+        transform: translateY(-36%);
+    }
+
+ /* Mobile Sides */
+
+.side-bar {
+    display: none;
+}
+
+.side-white-bar {
+    display: none;
+}
+
+.side-deco {
+    
+}
+}
+
+
+/* Hide/Show Index Lander on screen size */
+
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .lander-svg,
+    .button-title,
+    .small-lander-title {
+        display: none;
+    }
+
+    main {
+        margin-bottom: 1rem;
+    }
+    .mobile-only {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    /* Style the nav buttons to match the image */
+    .nav-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70vw;
+        padding: 1.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 1.5rem;
+        text-decoration: none;
+        text-align: center;
+        border: 2px solid var(--color-black);
+        color: var(--color-black);
+        background-color: var(--color-white);
+        box-shadow: var(--box-shadow);
+    }
+
+    .exhibition-wrapper {
+        margin-top: 10vh;
+    }
+
+
+    /* mobile  exhibtion list */
+    .list-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        gap: 0.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .list-item {
+        width: 80vw;
+        background-color: var(--color-white);
+        border-radius: 1rem;
+        box-shadow: var(--box-shadow);
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .list-item:first-child {
+        background-color: var(--color-blue);
+        color: var(--color-white);
+        font-weight: bold;
+        padding: 1.5rem 1rem 1.5rem 1rem;
+        margin: 2rem 0 0 0;
+    }
+
+    .list-item:hover {
+        transform: scale(1.02);
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .list-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        color: var(--color-black);
+    }
+
+    .list-item:first-child .list-link {
+        color: var(--color-white);
+    }
+
+    .list-title {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 1000;
+        font-family: var(--font-heading);
+    }
+
+
+    .list-artist {
+        font-size: 1.2rem;
+        font-family: var(--font-heading);
+    }
+
+    .list-dates {
+        font-size: 1.2rem;
+        font-family: var(--font-heading);
+    }
+
+    .bullet-point {
+        display: none;
+    }
+    
+    /* Remove / for mobile */
+    .list-title::after {
+        content: "\00a0";
+      }
+      
+      .list-artist::after {
+        content: "\00a0";
+      }
+
+
+/* Contacts Mobile*/
+
+.gall-name {
+    display: none;
+}
+
+.header-section h1 {
+        font-size: 3rem;
+}
+
+.map {
+    max-width: 80vw;
+}
+
+.form-text p {
+    font-size: 1.2rem;
+}
+
+.content-section-contacts  {
+    font-size: 1.2rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.black-button  {
+    max-width: 80vw;
+}
+
+
 }

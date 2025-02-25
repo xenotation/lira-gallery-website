@@ -1,26 +1,35 @@
 /* Exhibition Title */
 .exhibition-title {
-    width: 85%;
     background-color: var(--color-black);
     color: var(--color-blue);
-    padding: 0.5rem 1.2rem;
-    position: fixed;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.2vw;
+    margin: 0 8rem 0 8rem;
+    position: relative;
     text-align: left;
-    font-size: 0.8em;
+    font-size: 1em;
     z-index: 800;
 }
 
 /* Main Content Card */
 .content-card {
     width: 50%;
-    max-width: 50rem;
+    max-width: 55rem;
     background-color: var(--color-white);
     box-shadow: var(--box-shadow);
-    padding: 1.5rem;
-    border-radius: 0 2rem 0 0;
+    padding: 2vh 2rem 1.5rem 2rem;
+    border-radius: 0 3rem 0 0;
     position: relative;
-    margin: 0 auto auto auto; /* The third one control the distance from the bottom */
+    margin: -2.3rem auto auto auto; /* The third one control the distance from the bottom */
     z-index: 900;
+    border: 1px solid var(--color-black);
+
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Header Section */
@@ -29,17 +38,16 @@
     justify-content: space-between;
     text-transform: uppercase;
     text-align: left;
-    align-items: baseline;
-    margin-bottom: 1rem;
+    align-items: baseline;   
 }
 
 .header-section h1,
 .header-section .dates {
     font-family: var(--font-heading);
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 4rem;
     color: var(--color-black);
-    line-height: 3rem;
+    line-height: 4rem;
+    font-weight: bold;
 }
 
 .dates {
@@ -50,22 +58,22 @@
 .number-sequence {
     display: flex;
     gap: 0.5rem;
-    font-size: 1.2rem;
-    font-family: var(--font-light);
+    font-size: 1.4rem;
+    font-family: var(--font-heading);
+    font-weight: bold;
     color: var(--color-black);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .number-sequence span {
     cursor: pointer;
-    font-size: 18px;
-    color: #666;
+   
 }
 
 .number-sequence span.active {
-    font-weight: bold;
+
     text-decoration: underline;
-    color: #000;
+    color: var(--color-black);
 }
 
 /* Decorative SVG */
@@ -87,7 +95,8 @@
 .featured-image {
     position: relative;
     width: 100%;
-    height: 22.8rem;
+    height: 28vw;
+    max-height: 31rem;
     margin-bottom: 1.5rem;
     overflow: hidden;
 
@@ -98,19 +107,23 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 0.5rem;  
+    border-radius: 2rem;  
 
 }
 
 /* Content Section */
 .bio,
 .content-section {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 1.2rem;
+    line-height: 1.2em;
     font-family: var(--font-main);
     color: var(--color-black);
     text-align: justify;
+    padding: 0 1.2rem 0 1.2rem;
+}
 
+.bio {
+    padding: 0;
 }
 
 .content-section p {
@@ -128,6 +141,7 @@
     justify-content: space-between;
     align-items: baseline;
     width: 100%;
+    margin-bottom: 2rem;
 }
 
 /* Artist Name Styling */
@@ -161,14 +175,100 @@
 }
 
 
-@media (max-width: 768px) { /* Adjust for screens below 768px (phones) */
-.content-card {
-    width:fit-content;
-    padding: 2.3rem;
-}
-.header-section h1,
-.header-section .dates{
-    font-size: 2rem;
-}
 
+/* Mobile styles for screens up to 900px */
+@media (max-width: 900px) {
+    .content-card {
+        width: auto;
+        padding: 1rem;
+        margin: auto;
+        border-radius: 0 42vw 0 0;
+        border: 2px solid var(--color-black);
+    }
+    
+    .content-section {
+        width: auto;
+    }
+
+    .header-section h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-top: 1.2rem;
+        max-width: 75vw;
+    }
+    
+    .header-section .dates {
+        font-size: 2rem;
+    }
+    
+    .exhibition-title {
+        display: none;
+    }
+    
+    main {
+        z-index: auto;
+        width: 96vw;
+        max-width: auto;
+    }
+    
+    .decorative-svg {
+        display: none;
+    }
+    
+    .dates {
+        display: none;
+    }
+    
+    .featured-image {
+        height: auto;
+        aspect-ratio: 1.2 / 1;
+        overflow: visible;
+        border: 2px solid var(--color-black);
+        border-radius: 0.5rem;
+    }
+    
+    .number-sequence span {
+        font-size: 1.2rem;
+    }
+    
+    .featured-image img {
+        border-bottom: 2px solid var(--color-black);
+        border-radius: 0;
+    }
+    
+    .bio,
+    .content-section {
+        font-size: 1.2rem;
+        padding: 0;
+    }
+    
+    .artist-name {
+        font-size: 1.5rem;
+    }
+    
+    .artist-stars img {
+        width: 1.2rem;
+    }
+    
+    .back-button {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: var(--color-black);
+        font-size: 1.2rem;
+        z-index: 900; 
+        background-color: var(--color-white);
+        padding: 0.3rem 2vw 0.3rem 100vw;
+        border: 1px solid var(--color-black);
+    }
+    
+    .dates-mobile {
+        display: flex;
+        justify-content: space-between; 
+        font-family: var(--font-heading);
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0 0.5rem;
+    }
 }

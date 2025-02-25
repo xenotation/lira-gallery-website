@@ -1,8 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
+
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="/hyphenopoly/Hyphenopoly_Loader.js"></script>
+    <script>
+      Hyphenopoly.config({
+          require: {
+              "bg": "FORCEHYPHENOPOLY"
+          },
+          paths: {
+              patterndir: "\/\/192.168.5.102:8080\/hyphenopoly\/",
+              maindir: "\/\/192.168.5.102:8080\/hyphenopoly\/"
+          },
+          setup: {
+              selectors: [".content-card"]
+          }
+      });
+  </script>
+  
+
 
     <link rel="stylesheet" href="/css/base.css">  
     <link rel="stylesheet" href="/css/side-bars.css">  
@@ -92,11 +111,12 @@
         <div class="main-container">
           <main>
     <div class="exhibition-title">Контакти&nbsp;/&nbsp;Галерия Лира</div>
+    <a href="/" class="back-button">Назад</a>
 
     <div class="content-card">
         <div class="header-section">
-            <h1>Контакти</h1>
-            <div class="dates">Галерия</br>Лира</div>
+            <div class="contact-title"><h1>Контакти</h1></div>
+            <div class="gall-name">Галерия</br>Лира</div>
         </div>
         
         <div class="content-section-contacts">
@@ -114,7 +134,9 @@
             </iframe>
         </div>
         <br>
-         Формуляр за записване на месецянич бюлетин  за гелрията.
+         <div class="form-text">
+            <p>Формуляр за записване на месецянич бюлетин  за гелрията.</p>
+         </div>
         <a href="#" class="black-button">
             Формуляр 
             <img src="/ui/arrow.svg" alt="Arrow" class="arrow">
@@ -152,5 +174,6 @@
     </div>
     <script src="/js/time.js"></script>
     <script src="/js/screensaver.js"></script>
+    <script src="/js/lander_loader.js"></script>
   </body>
 </html>

@@ -2,11 +2,10 @@
     <div class="exhibition-title">{{ .Title }}&nbsp;/&nbsp;{{ .Params.artist }}</div>
 
     <div class="content-card">
-        <div class="header-section">
+
             <div class="header-archive">
                 <h1>{{ .Title }}</h1>
             </div>
-        </div>
 
         <!-- Number sequence under title with data-src -->
         <div class="number-sequence" id="image-selector">
@@ -38,13 +37,11 @@
                 </div>
                 <div class="bio">{{ .Params.bio }}</div>
 
-                <a href="#" class="black-button">
+                <a href="{{ "/archive/blueprints/" | relURL }}" class="black-button">
                     ЧЕРТЕЖИ 
                     <img src="{{ "ui/arrow.svg" | relURL }}" alt="Arrow" class="arrow">
                 </a>
-                
-                
-                
+    
             </div>
         </div>
     </div>

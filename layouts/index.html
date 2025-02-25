@@ -1,21 +1,28 @@
 {{ define "main" }}
 <div class="exhibition-wrapper">
-    <!-- Main Button with Decorative SVG -->
-    <a href="{{ with (index .Site.RegularPages.ByDate.Reverse 0) }}{{ .RelPermalink }}{{ end }}" class="button-wrapper">
-        <img class="lander-svg" src="{{ "ui/lander.svg" | relURL }}" alt="Decorative Element" />
-        <span class="button-title">
-            {{ with (index .Site.RegularPages.ByDate.Reverse 0) }}{{ .Title }}{{ end }}
-        </span>
-    </a>
-        
-    <!-- Dates -->
-    <div class="small-lander-title">
-        {{ with (index .Site.RegularPages.ByDate.Reverse 0) }}
-            {{ .Title }}&nbsp;/&nbsp;{{ .Params.artist }}&nbsp;/&nbsp;{{ .Params.datestart }} - {{ .Params.dateend }}
+    <!-- Display exhibition content only on larger screens -->
+
+        <a href="{{ with (index .Site.RegularPages.ByDate.Reverse 0) }}{{ .RelPermalink }}{{ end }}" class="button-wrapper">
+            <img class="lander-svg" src="{{ "ui/lander.svg" | relURL }}" alt="Decorative Element" />
+            <span class="button-title">
+                {{ with (index .Site.RegularPages.ByDate.Reverse 0) }}{{ .Title }}{{ end }}
+            </span>
+        </a>
+
+        <div class="small-lander-title">
+            {{ with (index .Site.RegularPages.ByDate.Reverse 0) }}
+                {{ .Title }}&nbsp;/&nbsp;{{ .Params.artist }}&nbsp;/&nbsp;<b>{{ .Params.datestart }} - {{ .Params.dateend }}</b>
+            {{ end }}
+        </div>
+
+
+    <!-- Display nav links as buttons on mobile -->
+    <div class="mobile-only nav-buttons">
+        {{ range .Site.Menus.main }}
+            <a href="{{ .URL }}" class="nav-button">{{ .Name }}</a>
         {{ end }}
     </div>
 </div>
 
 {{- partial "footer.html" . -}}
-
 {{ end }}

@@ -1,0 +1,169 @@
+Date : 2025-02-23 09:56:10
+Directory : d:\blog local\lira-gallery-website
+Total : 82 files,  45561 codes, 177 comments, 1507 blanks, all 47245 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| XML        |         23 |     40,933 |          6 |         39 |     40,978 |
+| HTML       |         30 |      2,439 |         25 |      1,062 |      3,526 |
+| CSS        |          8 |      1,854 |        118 |        302 |      2,274 |
+| JavaScript |          6 |        138 |         18 |         40 |        196 |
+| Markdown   |         13 |         94 |          0 |         37 |        131 |
+| YAML       |          1 |         62 |          9 |          9 |         80 |
+| TOML       |          1 |         41 |          1 |         18 |         60 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                     | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                        |         82 |     45,561 |        177 |      1,507 |     47,245 |
+| . (Files)                                                                                |          1 |         41 |          1 |         18 |         60 |
+| .github                                                                                  |          1 |         62 |          9 |          9 |         80 |
+| .github\workflows                                                                        |          1 |         62 |          9 |          9 |         80 |
+| archetypes                                                                               |          1 |          5 |          0 |          1 |          6 |
+| content                                                                                  |         12 |         89 |          0 |         36 |        125 |
+| content (Files)                                                                          |          2 |         18 |          0 |          9 |         27 |
+| content\archive                                                                          |          2 |         15 |          0 |          5 |         20 |
+| content\archive (Files)                                                                  |          1 |          9 |          0 |          3 |         12 |
+| content\archive\blueprints                                                               |          1 |          6 |          0 |          2 |          8 |
+| content\exhibitions                                                                      |          8 |         56 |          0 |         22 |         78 |
+| content\exhibitions\The-example-1                                                        |          1 |         10 |          0 |          2 |         12 |
+| content\exhibitions\The-example-2                                                        |          1 |          6 |          0 |          2 |          8 |
+| content\exhibitions\The-example-3                                                        |          1 |          6 |          0 |          2 |          8 |
+| content\exhibitions\The-example-4                                                        |          1 |          6 |          0 |          2 |          8 |
+| content\exhibitions\The-example-5                                                        |          1 |          6 |          0 |          2 |          8 |
+| content\exhibitions\The-example-7                                                        |          1 |          6 |          0 |          2 |          8 |
+| content\exhibitions\The-other-thing                                                      |          1 |          6 |          0 |          2 |          8 |
+| content\exhibitions\the-hundred-year-window                                              |          1 |         10 |          0 |          8 |         18 |
+| layouts                                                                                  |         12 |        314 |         25 |         78 |        417 |
+| layouts (Files)                                                                          |          1 |         21 |          2 |          6 |         29 |
+| layouts\_default                                                                         |          8 |        239 |         21 |         63 |        323 |
+| layouts\partials                                                                         |          3 |         54 |          2 |          9 |         65 |
+| public                                                                                   |         39 |     23,701 |         71 |      1,177 |     24,949 |
+| public (Files)                                                                           |          3 |        244 |          0 |         55 |        299 |
+| public\archive                                                                           |          2 |        239 |          0 |        127 |        366 |
+| public\archive (Files)                                                                   |          1 |        128 |          0 |         71 |        199 |
+| public\archive\blueprints                                                                |          1 |        111 |          0 |         56 |        167 |
+| public\blueprints                                                                        |          1 |        120 |          0 |         57 |        177 |
+| public\categories                                                                        |          2 |        102 |          0 |         42 |        144 |
+| public\contacts                                                                          |          1 |        116 |          0 |         44 |        160 |
+| public\css                                                                               |          4 |        927 |         59 |        151 |      1,137 |
+| public\exhibitions                                                                       |         10 |      1,190 |          0 |        510 |      1,700 |
+| public\exhibitions (Files)                                                               |          2 |        223 |          0 |         50 |        273 |
+| public\exhibitions\the-example-1                                                         |          1 |        124 |          0 |         61 |        185 |
+| public\exhibitions\the-example-2                                                         |          1 |        120 |          0 |         57 |        177 |
+| public\exhibitions\the-example-2\second                                                  |          1 |        120 |          0 |         57 |        177 |
+| public\exhibitions\the-example-3                                                         |          1 |        120 |          0 |         57 |        177 |
+| public\exhibitions\the-example-3\thrid                                                   |          1 |        120 |          0 |         57 |        177 |
+| public\exhibitions\the-example-4                                                         |          1 |        120 |          0 |         57 |        177 |
+| public\exhibitions\the-example-4\fourt                                                   |          1 |        120 |          0 |         57 |        177 |
+| public\exhibitions\the-example-5                                                         |          1 |        120 |          0 |         57 |        177 |
+| public\exhibitions\the-example-5\five                                                    |          1 |        120 |          0 |         57 |        177 |
+| public\exhibitions\the-example-7                                                         |          1 |        120 |          0 |         57 |        177 |
+| public\exhibitions\the-example-7\severn                                                  |          1 |        120 |          0 |         57 |        177 |
+| public\exhibitions\the-hundred-year-window                                               |          1 |        123 |          0 |         57 |        180 |
+| public\exhibitions\the-other-thing                                                       |          1 |        120 |          0 |         57 |        177 |
+| public\exhibitions\the-other-thing\fix                                                   |          1 |        120 |          0 |         57 |        177 |
+| public\gallery                                                                           |          2 |        239 |          0 |        112 |        351 |
+| public\gallery (Files)                                                                   |          1 |        119 |          0 |         55 |        174 |
+| public\gallery\blueprints                                                                |          1 |        120 |          0 |         57 |        177 |
+| public\js                                                                                |          3 |         69 |          9 |         20 |         98 |
+| public\tags                                                                              |          2 |        102 |          0 |         42 |        144 |
+| public\ui                                                                                |          9 |     20,353 |          3 |         17 |     20,373 |
+| static                                                                                   |         16 |     21,349 |         71 |        188 |     21,608 |
+| static\css                                                                               |          4 |        927 |         59 |        151 |      1,137 |
+| static\js                                                                                |          3 |         69 |          9 |         20 |         98 |
+| static\ui                                                                                |          9 |     20,353 |          3 |         17 |     20,373 |
++------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                 | language   | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\blog local\lira-gallery-website\.github\workflows\hugp.yaml                           | YAML       |         62 |          9 |          9 |         80 |
+| d:\blog local\lira-gallery-website\archetypes\default.md                                 | Markdown   |          5 |          0 |          1 |          6 |
+| d:\blog local\lira-gallery-website\content\archive\blueprints\index.md                   | Markdown   |          6 |          0 |          2 |          8 |
+| d:\blog local\lira-gallery-website\content\archive\index.md                              | Markdown   |          9 |          0 |          3 |         12 |
+| d:\blog local\lira-gallery-website\content\contacts.md                                   | Markdown   |          9 |          0 |          3 |         12 |
+| d:\blog local\lira-gallery-website\content\exhibitions\The-example-1\index.md            | Markdown   |         10 |          0 |          2 |         12 |
+| d:\blog local\lira-gallery-website\content\exhibitions\The-example-2\second.md           | Markdown   |          6 |          0 |          2 |          8 |
+| d:\blog local\lira-gallery-website\content\exhibitions\The-example-3\thrid.md            | Markdown   |          6 |          0 |          2 |          8 |
+| d:\blog local\lira-gallery-website\content\exhibitions\The-example-4\fourt.md            | Markdown   |          6 |          0 |          2 |          8 |
+| d:\blog local\lira-gallery-website\content\exhibitions\The-example-5\five.md             | Markdown   |          6 |          0 |          2 |          8 |
+| d:\blog local\lira-gallery-website\content\exhibitions\The-example-7\severn.md           | Markdown   |          6 |          0 |          2 |          8 |
+| d:\blog local\lira-gallery-website\content\exhibitions\The-other-thing\fix.md            | Markdown   |          6 |          0 |          2 |          8 |
+| d:\blog local\lira-gallery-website\content\exhibitions\the-hundred-year-window\index.md  | Markdown   |         10 |          0 |          8 |         18 |
+| d:\blog local\lira-gallery-website\content\gallery.md                                    | Markdown   |          9 |          0 |          6 |         15 |
+| d:\blog local\lira-gallery-website\hugo.toml                                             | TOML       |         41 |          1 |         18 |         60 |
+| d:\blog local\lira-gallery-website\layouts\_default\archive.html                         | HTML       |         38 |          4 |         11 |         53 |
+| d:\blog local\lira-gallery-website\layouts\_default\baseof.html                          | HTML       |         37 |          4 |         10 |         51 |
+| d:\blog local\lira-gallery-website\layouts\_default\baseof1.html                         | HTML       |         25 |          0 |         11 |         36 |
+| d:\blog local\lira-gallery-website\layouts\_default\blueprints.html                      | HTML       |         26 |          2 |          7 |         35 |
+| d:\blog local\lira-gallery-website\layouts\_default\contacts.html                        | HTML       |         28 |          2 |          3 |         33 |
+| d:\blog local\lira-gallery-website\layouts\_default\gallery.html                         | HTML       |         30 |          4 |          8 |         42 |
+| d:\blog local\lira-gallery-website\layouts\_default\list.html                            | HTML       |         15 |          0 |          1 |         16 |
+| d:\blog local\lira-gallery-website\layouts\_default\single.html                          | HTML       |         40 |          5 |         12 |         57 |
+| d:\blog local\lira-gallery-website\layouts\index.html                                    | HTML       |         21 |          2 |          6 |         29 |
+| d:\blog local\lira-gallery-website\layouts\partials\footer.html                          | HTML       |         11 |          0 |          1 |         12 |
+| d:\blog local\lira-gallery-website\layouts\partials\head.html                            | HTML       |          9 |          0 |          2 |         11 |
+| d:\blog local\lira-gallery-website\layouts\partials\header.html                          | HTML       |         34 |          2 |          6 |         42 |
+| d:\blog local\lira-gallery-website\public\archive\blueprints\index.html                  | HTML       |        111 |          0 |         56 |        167 |
+| d:\blog local\lira-gallery-website\public\archive\index.html                             | HTML       |        128 |          0 |         71 |        199 |
+| d:\blog local\lira-gallery-website\public\blueprints\index.html                          | HTML       |        120 |          0 |         57 |        177 |
+| d:\blog local\lira-gallery-website\public\categories\index.html                          | HTML       |         91 |          0 |         41 |        132 |
+| d:\blog local\lira-gallery-website\public\categories\index.xml                           | XML        |         11 |          0 |          1 |         12 |
+| d:\blog local\lira-gallery-website\public\contacts\index.html                            | HTML       |        116 |          0 |         44 |        160 |
+| d:\blog local\lira-gallery-website\public\css\base.css                                   | CSS        |        622 |         33 |         91 |        746 |
+| d:\blog local\lira-gallery-website\public\css\footer.css                                 | CSS        |         41 |          6 |          9 |         56 |
+| d:\blog local\lira-gallery-website\public\css\side-bars.css                              | CSS        |         54 |          6 |          8 |         68 |
+| d:\blog local\lira-gallery-website\public\css\single.css                                 | CSS        |        210 |         14 |         43 |        267 |
+| d:\blog local\lira-gallery-website\public\exhibitions\index.html                         | HTML       |        155 |          0 |         49 |        204 |
+| d:\blog local\lira-gallery-website\public\exhibitions\index.xml                          | XML        |         68 |          0 |          1 |         69 |
+| d:\blog local\lira-gallery-website\public\exhibitions\the-example-1\index.html           | HTML       |        124 |          0 |         61 |        185 |
+| d:\blog local\lira-gallery-website\public\exhibitions\the-example-2\second\index.html    | HTML       |        120 |          0 |         57 |        177 |
+| d:\blog local\lira-gallery-website\public\exhibitions\the-example-3\thrid\index.html     | HTML       |        120 |          0 |         57 |        177 |
+| d:\blog local\lira-gallery-website\public\exhibitions\the-example-4\fourt\index.html     | HTML       |        120 |          0 |         57 |        177 |
+| d:\blog local\lira-gallery-website\public\exhibitions\the-example-5\five\index.html      | HTML       |        120 |          0 |         57 |        177 |
+| d:\blog local\lira-gallery-website\public\exhibitions\the-example-7\severn\index.html    | HTML       |        120 |          0 |         57 |        177 |
+| d:\blog local\lira-gallery-website\public\exhibitions\the-hundred-year-window\index.html | HTML       |        123 |          0 |         57 |        180 |
+| d:\blog local\lira-gallery-website\public\exhibitions\the-other-thing\fix\index.html     | HTML       |        120 |          0 |         57 |        177 |
+| d:\blog local\lira-gallery-website\public\gallery\blueprints\index.html                  | HTML       |        120 |          0 |         57 |        177 |
+| d:\blog local\lira-gallery-website\public\gallery\index.html                             | HTML       |        119 |          0 |         55 |        174 |
+| d:\blog local\lira-gallery-website\public\index.html                                     | HTML       |        107 |          0 |         53 |        160 |
+| d:\blog local\lira-gallery-website\public\index.xml                                      | XML        |         89 |          0 |          1 |         90 |
+| d:\blog local\lira-gallery-website\public\js\image-gallery.js                            | JavaScript |         20 |          5 |          7 |         32 |
+| d:\blog local\lira-gallery-website\public\js\screensaver.js                              | JavaScript |         36 |          0 |          9 |         45 |
+| d:\blog local\lira-gallery-website\public\js\time.js                                     | JavaScript |         13 |          4 |          4 |         21 |
+| d:\blog local\lira-gallery-website\public\sitemap.xml                                    | XML        |         48 |          0 |          1 |         49 |
+| d:\blog local\lira-gallery-website\public\tags\index.html                                | HTML       |         91 |          0 |         41 |        132 |
+| d:\blog local\lira-gallery-website\public\tags\index.xml                                 | XML        |         11 |          0 |          1 |         12 |
+| d:\blog local\lira-gallery-website\public\ui\arrow.svg                                   | XML        |         15 |          0 |          0 |         15 |
+| d:\blog local\lira-gallery-website\public\ui\circles.svg                                 | XML        |         38 |          0 |          0 |         38 |
+| d:\blog local\lira-gallery-website\public\ui\decorative-overlay.svg                      | XML        |        134 |          1 |          1 |        136 |
+| d:\blog local\lira-gallery-website\public\ui\lander.svg                                  | XML        |      1,473 |          1 |          1 |      1,475 |
+| d:\blog local\lira-gallery-website\public\ui\lira-logo-box.svg                           | XML        |         16 |          0 |          0 |         16 |
+| d:\blog local\lira-gallery-website\public\ui\ncf.svg                                     | XML        |         40 |          0 |          1 |         41 |
+| d:\blog local\lira-gallery-website\public\ui\nia-svg.svg                                 | XML        |     18,625 |          0 |         13 |     18,638 |
+| d:\blog local\lira-gallery-website\public\ui\side-deco.svg                               | XML        |          1 |          0 |          0 |          1 |
+| d:\blog local\lira-gallery-website\public\ui\star.svg                                    | XML        |         11 |          1 |          1 |         13 |
+| d:\blog local\lira-gallery-website\static\css\base.css                                   | CSS        |        622 |         33 |         91 |        746 |
+| d:\blog local\lira-gallery-website\static\css\footer.css                                 | CSS        |         41 |          6 |          9 |         56 |
+| d:\blog local\lira-gallery-website\static\css\side-bars.css                              | CSS        |         54 |          6 |          8 |         68 |
+| d:\blog local\lira-gallery-website\static\css\single.css                                 | CSS        |        210 |         14 |         43 |        267 |
+| d:\blog local\lira-gallery-website\static\js\image-gallery.js                            | JavaScript |         20 |          5 |          7 |         32 |
+| d:\blog local\lira-gallery-website\static\js\screensaver.js                              | JavaScript |         36 |          0 |          9 |         45 |
+| d:\blog local\lira-gallery-website\static\js\time.js                                     | JavaScript |         13 |          4 |          4 |         21 |
+| d:\blog local\lira-gallery-website\static\ui\arrow.svg                                   | XML        |         15 |          0 |          0 |         15 |
+| d:\blog local\lira-gallery-website\static\ui\circles.svg                                 | XML        |         38 |          0 |          0 |         38 |
+| d:\blog local\lira-gallery-website\static\ui\decorative-overlay.svg                      | XML        |        134 |          1 |          1 |        136 |
+| d:\blog local\lira-gallery-website\static\ui\lander.svg                                  | XML        |      1,473 |          1 |          1 |      1,475 |
+| d:\blog local\lira-gallery-website\static\ui\lira-logo-box.svg                           | XML        |         16 |          0 |          0 |         16 |
+| d:\blog local\lira-gallery-website\static\ui\ncf.svg                                     | XML        |         40 |          0 |          1 |         41 |
+| d:\blog local\lira-gallery-website\static\ui\nia-svg.svg                                 | XML        |     18,625 |          0 |         13 |     18,638 |
+| d:\blog local\lira-gallery-website\static\ui\side-deco.svg                               | XML        |          1 |          0 |          0 |          1 |
+| d:\blog local\lira-gallery-website\static\ui\star.svg                                    | XML        |         11 |          1 |          1 |         13 |
+| Total                                                                                    |            |     45,561 |        177 |      1,507 |     47,245 |
++------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

@@ -1,8 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
+
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="/hyphenopoly/Hyphenopoly_Loader.js"></script>
+    <script>
+      Hyphenopoly.config({
+          require: {
+              "bg": "FORCEHYPHENOPOLY"
+          },
+          paths: {
+              patterndir: "\/\/192.168.5.102:8080\/hyphenopoly\/",
+              maindir: "\/\/192.168.5.102:8080\/hyphenopoly\/"
+          },
+          setup: {
+              selectors: [".content-card"]
+          }
+      });
+  </script>
+  
+
 
     <link rel="stylesheet" href="/css/base.css">  
     <link rel="stylesheet" href="/css/side-bars.css">  
@@ -94,10 +113,19 @@
   <ul class="list-container">
     
       <li class="list-item">
+        <a href="//192.168.5.102:8080/exhibitions/the-example-1/" class="list-link">
+          <span class="bullet-point">●</span>
+          <span class="list-title">Стогодишнияtт Прозорец 420</span>
+          <span class="list-artist">Ния Ценкова</span>
+          <span class="list-dates"></span>
+        </a>
+      </li>
+    
+      <li class="list-item">
         <a href="//192.168.5.102:8080/exhibitions/the-hundred-year-window/" class="list-link">
           <span class="bullet-point">●</span>
-          <span class="list-title">Стогодишният Прозорец</span>&nbsp;/&nbsp;
-          <span class="list-artist">Ния Ценкова</span>&nbsp;/&nbsp;
+          <span class="list-title">Стогодишният Прозорец</span>
+          <span class="list-artist">Ния Ценкова</span>
           <span class="list-dates">12.24 - 02.25</span>
         </a>
       </li>
@@ -105,8 +133,8 @@
       <li class="list-item">
         <a href="//192.168.5.102:8080/exhibitions/the-example-4/fourt/" class="list-link">
           <span class="bullet-point">●</span>
-          <span class="list-title">Стогодишнияtт Прозорец 4</span>&nbsp;/&nbsp;
-          <span class="list-artist">Ники Долния</span>&nbsp;/&nbsp;
+          <span class="list-title">Стогодишнияtт Прозорец 4</span>
+          <span class="list-artist">Ники Долния</span>
           <span class="list-dates">12.24 - 02.25</span>
         </a>
       </li>
@@ -114,26 +142,17 @@
       <li class="list-item">
         <a href="//192.168.5.102:8080/exhibitions/the-example-2/second/" class="list-link">
           <span class="bullet-point">●</span>
-          <span class="list-title">Стогодишнияtт Прозорец 5</span>&nbsp;/&nbsp;
-          <span class="list-artist">Гошо Мошо</span>&nbsp;/&nbsp;
+          <span class="list-title">Стогодишнияtт Прозорец 5</span>
+          <span class="list-artist">Гошо Мошо</span>
           <span class="list-dates">12.24 - 02.25</span>
-        </a>
-      </li>
-    
-      <li class="list-item">
-        <a href="//192.168.5.102:8080/exhibitions/the-example-1/" class="list-link">
-          <span class="bullet-point">●</span>
-          <span class="list-title">Стогодишнияtт Прозорец 420</span>&nbsp;/&nbsp;
-          <span class="list-artist">Ния Ценкова</span>&nbsp;/&nbsp;
-          <span class="list-dates"></span>
         </a>
       </li>
     
       <li class="list-item">
         <a href="//192.168.5.102:8080/exhibitions/the-example-3/thrid/" class="list-link">
           <span class="bullet-point">●</span>
-          <span class="list-title">Стогодишнияtт Прозорец 6</span>&nbsp;/&nbsp;
-          <span class="list-artist">Петър Шасо</span>&nbsp;/&nbsp;
+          <span class="list-title">Стогодишнияtт Прозорец 6</span>
+          <span class="list-artist">Петър Шасо</span>
           <span class="list-dates">12.24 - 02.25</span>
         </a>
       </li>
@@ -141,8 +160,8 @@
       <li class="list-item">
         <a href="//192.168.5.102:8080/exhibitions/the-example-7/severn/" class="list-link">
           <span class="bullet-point">●</span>
-          <span class="list-title">Стогодишнияtт Прозорец 7</span>&nbsp;/&nbsp;
-          <span class="list-artist">Ганчо Ганчо</span>&nbsp;/&nbsp;
+          <span class="list-title">Стогодишнияtт Прозорец 7</span>
+          <span class="list-artist">Ганчо Ганчо</span>
           <span class="list-dates">12.24 - 02.25</span>
         </a>
       </li>
@@ -150,8 +169,8 @@
       <li class="list-item">
         <a href="//192.168.5.102:8080/exhibitions/the-example-5/five/" class="list-link">
           <span class="bullet-point">●</span>
-          <span class="list-title">Стогодишнияtт Прозорец 2</span>&nbsp;/&nbsp;
-          <span class="list-artist">Цецо Жабата</span>&nbsp;/&nbsp;
+          <span class="list-title">Стогодишнияtт Прозорец 2</span>
+          <span class="list-artist">Цецо Жабата</span>
           <span class="list-dates">12.24 - 02.25</span>
         </a>
       </li>
@@ -159,8 +178,8 @@
       <li class="list-item">
         <a href="//192.168.5.102:8080/exhibitions/the-other-thing/fix/" class="list-link">
           <span class="bullet-point">●</span>
-          <span class="list-title">Стогодишнияtт Прозорец 3</span>&nbsp;/&nbsp;
-          <span class="list-artist">НИЯ ЦЕНКОВА</span>&nbsp;/&nbsp;
+          <span class="list-title">Стогодишнияtт Прозорец 3</span>
+          <span class="list-artist">НИЯ ЦЕНКОВА</span>
           <span class="list-dates">12.24 - 02.25</span>
         </a>
       </li>
@@ -198,5 +217,6 @@
     </div>
     <script src="/js/time.js"></script>
     <script src="/js/screensaver.js"></script>
+    <script src="/js/lander_loader.js"></script>
   </body>
 </html>

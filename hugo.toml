@@ -1,6 +1,6 @@
 baseURL = "https://lira-gallery.netlify.app/"
 title = "Моят сайт"
-languageCode = "bg-bg"
+languageCode = "bg"
 
 [menu]
 
@@ -27,6 +27,7 @@ languageCode = "bg-bg"
     name = "Контакти"
     url = "/contacts"
     weight = 4
+
 
 
 disableKinds = ["taxonomy", "term"]

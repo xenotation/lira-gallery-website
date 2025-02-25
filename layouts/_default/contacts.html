@@ -1,10 +1,11 @@
 {{ define "main" }}
     <div class="exhibition-title">{{ .Title }}&nbsp;/&nbsp;{{ .Params.artist }}</div>
+    <a href="{{ "/" | relURL }}" class="back-button">Назад</a>
 
     <div class="content-card">
         <div class="header-section">
-            <h1>{{ .Title }}</h1>
-            <div class="dates">Галерия</br>Лира</div>
+            <div class="contact-title"><h1>{{ .Title }}</h1></div>
+            <div class="gall-name">Галерия</br>Лира</div>
         </div>
         <!-- Page Content -->
         <div class="content-section-contacts">
@@ -19,7 +20,9 @@
             </iframe>
         </div>
         <br>
-         Формуляр за записване на месецянич бюлетин  за гелрията.
+         <div class="form-text">
+            <p>Формуляр за записване на месецянич бюлетин  за гелрията.</p>
+         </div>
         <a href="#" class="black-button">
             Формуляр 
             <img src="{{ "ui/arrow.svg" | relURL }}" alt="Arrow" class="arrow">

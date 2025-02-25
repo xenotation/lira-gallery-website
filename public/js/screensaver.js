@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let animationFrame;
     let position = 0;
     let direction = -1; // Moves up initially
-    const limit = -800; // Maximum movement upwards
+    const limit = -300; // Maximum movement upwards
     const speed = 0.1; // Pixels per frame
     let isMoving = false;
 

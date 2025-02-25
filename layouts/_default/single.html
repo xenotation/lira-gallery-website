@@ -1,6 +1,8 @@
 {{ define "main" }}
 
     <div class="exhibition-title">{{ .Title }}&nbsp;/&nbsp;{{ .Params.artist }}</div>
+    <a href="{{ "/exhibitions/" | relURL }}" class="back-button">Назад</a>
+
 
     <div class="content-card">
         <div class="header-section">
@@ -25,6 +27,11 @@
         <!-- Image Section -->
         <div class="featured-image">
             <img id="main-image" src="{{ with (.Resources.ByType "image").Get 0 }}{{ .RelPermalink }}{{ end }}" alt="{{ .Title }}" />
+            <div class="dates-mobile">
+                <span>{{ .Params.datestart }}</span>
+                <span> - </span>
+                <span>{{ .Params.dateend }}</span>
+            </div>
         </div>
 
         <!-- Exhibition Content -->

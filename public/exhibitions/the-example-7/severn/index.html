@@ -1,8 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
+
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="/hyphenopoly/Hyphenopoly_Loader.js"></script>
+    <script>
+      Hyphenopoly.config({
+          require: {
+              "bg": "FORCEHYPHENOPOLY"
+          },
+          paths: {
+              patterndir: "\/\/192.168.5.102:8080\/hyphenopoly\/",
+              maindir: "\/\/192.168.5.102:8080\/hyphenopoly\/"
+          },
+          setup: {
+              selectors: [".content-card"]
+          }
+      });
+  </script>
+  
+
 
     <link rel="stylesheet" href="/css/base.css">  
     <link rel="stylesheet" href="/css/side-bars.css">  
@@ -93,6 +112,8 @@
           <main>
 
     <div class="exhibition-title">Стогодишнияtт Прозорец 7&nbsp;/&nbsp;Ганчо Ганчо</div>
+    <a href="/exhibitions/" class="back-button">Назад</a>
+
 
     <div class="content-card">
         <div class="header-section">
@@ -114,6 +135,11 @@
         
         <div class="featured-image">
             <img id="main-image" src="" alt="Стогодишнияtт Прозорец 7" />
+            <div class="dates-mobile">
+                <span></span>
+                <span> - </span>
+                <span></span>
+            </div>
         </div>
 
         
@@ -168,5 +194,6 @@
     </div>
     <script src="/js/time.js"></script>
     <script src="/js/screensaver.js"></script>
+    <script src="/js/lander_loader.js"></script>
   </body>
 </html>

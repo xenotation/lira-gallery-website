@@ -5,16 +5,13 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 0 2rem 0.5rem 2rem;
+    padding: 0 11rem 1.1rem 11rem;
     z-index: 800;
-    display: flex;
-    justify-content: center; /* Centers the inner container */
 }
 
 /* Inner Container - Adjustable Width */
 .footer-inner-container {
-    width: 90%; /* Adjust this to change the width */
-    max-width: 1250px; /* Optional max width */
+
 }
 
 /* Divider */
@@ -30,7 +27,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    justify-content: flex-start; /* Ensures left alignment */
+    justify-content: flex-start;
 }
 
 /* Logo */
@@ -43,8 +40,17 @@ footer {
 .footer-content {
     font-size: 0.8rem;
     color: var(--color-black);
-    max-width: 23rem;
+    max-width: 20rem;
     text-align: left;
     align-items: baseline;
+}
+
+@media (max-width: 768px) {
+    
+    footer {
+        padding: 0 3rem 0.5rem 3rem;
+        z-index: 700;
+        max-width: 80vw;
+    }
 
 }

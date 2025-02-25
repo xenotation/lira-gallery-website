@@ -1,9 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
+
   <head>
 	<meta name="generator" content="Hugo 0.128.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="/hyphenopoly/Hyphenopoly_Loader.js"></script>
+    <script>
+      Hyphenopoly.config({
+          require: {
+              "bg": "FORCEHYPHENOPOLY"
+          },
+          paths: {
+              patterndir: "\/\/192.168.5.102:8080\/hyphenopoly\/",
+              maindir: "\/\/192.168.5.102:8080\/hyphenopoly\/"
+          },
+          setup: {
+              selectors: [".content-card"]
+          }
+      });
+  </script>
+  
+
 
     <link rel="stylesheet" href="/css/base.css">  
     <link rel="stylesheet" href="/css/side-bars.css">  
@@ -94,17 +113,31 @@
           <main>
 <div class="exhibition-wrapper">
     
-    <a href="/exhibitions/the-hundred-year-window/" class="button-wrapper">
-        <img class="lander-svg" src="/ui/lander.svg" alt="Decorative Element" />
-        <span class="button-title">
-            Стогодишният Прозорец
-        </span>
-    </a>
-        
+
+        <a href="/exhibitions/the-example-1/" class="button-wrapper">
+            <img class="lander-svg" src="/ui/lander.svg" alt="Decorative Element" />
+            <span class="button-title">
+                Стогодишнияtт Прозорец 420
+            </span>
+        </a>
+
+        <div class="small-lander-title">
+            
+                Стогодишнияtт Прозорец 420&nbsp;/&nbsp;Ния Ценкова&nbsp;/&nbsp;<b>12.2024 - 02.2025</b>
+            
+        </div>
+
+
     
-    <div class="small-lander-title">
+    <div class="mobile-only nav-buttons">
         
-            Стогодишният Прозорец&nbsp;/&nbsp;Ния Ценкова&nbsp;/&nbsp; - 
+            <a href="/exhibitions" class="nav-button">Изложби</a>
+        
+            <a href="/gallery" class="nav-button">Галерия</a>
+        
+            <a href="/archive" class="nav-button">Архив</a>
+        
+            <a href="/contacts" class="nav-button">Контакти</a>
         
     </div>
 </div><footer>
@@ -140,5 +173,6 @@
     </div>
     <script src="/js/time.js"></script>
     <script src="/js/screensaver.js"></script>
+    <script src="/js/lander_loader.js"></script>
   </body>
 </html>

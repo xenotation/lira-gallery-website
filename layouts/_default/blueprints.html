@@ -1,0 +1,34 @@
+{{ define "main" }}
+    <div class="exhibition-title">{{ .Params.artist }}&nbsp;/&nbsp;{{ .Title }}</div>
+
+    <div class="content-card-blue">
+
+        <div class="name-stars-wrapper">
+            <h2 class="artist-name-blue">{{ .Params.Title }}</h2>
+            <div class="artist-stars">
+                <img src="{{ "ui/star.svg" | relURL }}" alt="Lira Stat" />
+                <img src="{{ "ui/star.svg" | relURL }}" alt="Lira Stat" />
+                <img src="{{ "ui/star.svg" | relURL }}" alt="Lira Stat" />
+            </div>
+        </div>
+
+        <!-- Number sequence under title with data-src -->
+        <div class="number-sequence-blue" id="image-selector">
+            {{ $counter := 1 }}
+            {{ range $index, $file := (.Resources.ByType "image") }}
+                <span data-src="{{ $file.RelPermalink }}">{{ printf "%02d" $counter }}</span>
+                {{ $counter = add $counter 1 }}
+            {{ end }}
+        </div>
+
+        <!-- Image Section -->
+        <div class="featured-image-blue">
+            <img id="main-image" src="{{ with (.Resources.ByType "image").Get 0 }}{{ .RelPermalink }}{{ end }}" alt="{{ .Title }}" />
+        </div>
+        <div class="download"><a href="{{ "/documents/blueprints.pdf" | relURL }}" class="download-blue">Свали PDF</a></div>
+    </div>
+
+    {{- partial "footer.html" . -}}
+
+    <script src="{{ "js/image-gallery.js" | relURL }}"></script>
+{{ end }}

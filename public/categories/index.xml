@@ -5,7 +5,7 @@
     <link>//192.168.5.102:8080/categories/</link>
     <description>Recent content in Categories on Моят сайт</description>
     <generator>Hugo</generator>
-    <language>bg-bg</language>
+    <language>bg</language>
     <atom:link href="//192.168.5.102:8080/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
