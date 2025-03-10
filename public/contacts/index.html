@@ -186,21 +186,18 @@
         <p>Попълнете вашият e-mail, за да получавате месечния бюлетин на галерия „Лира“</p>
     </div>
 
-    <form 
-    name="newsletter" method="POST" data-netlify="true" onsubmit="submit"
-    >
-
-
     
-    <div class="input-box">
-      <input type="email" id="email-input" placeholder="Вашият e-mail" name="email" required>
-    </div>
+    <form name="newsletter" method="POST" netlify>
+        <div class="input-box">
+            <input type="email" id="email-input" placeholder="Вашият e-mail" name="email" required>
+        </div>
 
-    
-    <a href="#" class="black-button" onclick="submitEmailForm()">
-        Запишете се 
-        <img src="/ui/arrow.svg" alt="Arrow" class="arrow">
-    </a>
+        <button type="submit" class="black-button">
+            Запишете се 
+            <img src="/ui/arrow.svg" alt="Arrow" class="arrow">
+        </button>
+    </form>
+
 </div><footer>
   <div class="footer-inner-container">
     <div class="footer-divider"></div>
