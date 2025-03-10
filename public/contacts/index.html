@@ -187,16 +187,28 @@
     </div>
 
     
-    <form name="newsletter" method="POST" netlify>
-        <div class="input-box">
-            <input type="email" id="email-input" placeholder="Вашият e-mail" name="email" required>
-        </div>
-
-        <button type="submit" class="black-button">
-            Запишете се 
-            <img src="/ui/arrow.svg" alt="Arrow" class="arrow">
-        </button>
-    </form>
+    <form name="newsletter" method="POST" netlify netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="newsletter">
+      
+      
+      <p style="display: none;">
+          <label>Don’t fill this out if you're human: 
+              <input name="bot-field">
+          </label>
+      </p>
+  
+      
+      <div class="input-box">
+          <input type="email" id="email-input" placeholder="Вашият e-mail" name="email" required>
+      </div>
+  
+      
+      <button type="submit" class="black-button">
+          Запишете се 
+          <img src="/ui/arrow.svg" alt="Arrow" class="arrow">
+      </button>
+  </form>
+  
 
 </div><footer>
   <div class="footer-inner-container">
