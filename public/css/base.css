@@ -433,6 +433,38 @@ nav.main-nav {
 }
 
 /* Contacts */
+/* Email Input Box Styled like the Black Button */
+/* Email Input Box Styled like the Black Button */
+.input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    padding: 16px 24px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-size: 2rem;
+    border-radius: 2rem;
+    border: none;
+    width: 36vw; /* Match the width of the black button */
+    max-width: 36vw; /* Ensures it doesn't stretch too wide */
+    box-sizing: border-box;
+}
+
+.input-box input::placeholder {
+    color: var(--color-white);
+}
+
+.input-box input:focus {
+    outline: none;
+    border: 2px solid var(--color-blue); /* Blue border on focus */
+}
+
+
+
 .map {
     width: 100%;
     max-width: 50vw; 
@@ -755,6 +787,8 @@ nav.main-nav {
 
 
 /* Contacts Mobile*/
+
+
 
 .gall-name {
     display: none;

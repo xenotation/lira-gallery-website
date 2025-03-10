@@ -32,37 +32,52 @@
         }
       }
     }
-    </script>
-    
-    <div class="exhibition-title">{{ .Title }}&nbsp;/&nbsp;{{ .Params.artist }}</div>
-    <a href="{{ "/" | relURL }}" class="back-button">Назад</a>
+</script>
 
-    <div class="content-card">
-        <div class="header-section">
-            <div class="contact-title"><h1>{{ .Title }}</h1></div>
-            <div class="gall-name">Галерия</br>Лира</div>
-        </div>
-        <!-- Page Content -->
-        <div class="content-section-contacts">
-            {{ .Content }}
-        </div>
-        <!-- Map Section -->
-        <div class="map">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.6081451183163!2d23.327651975175886!3d42.6908422141409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa857497c8e23d%3A0x2d68d5abfab32261!2sSofia%20Center%2C%20General%20Gurko%20St%2045%2C%201000%20Sofia!5e0!3m2!1sen!2sbg!4v1739699496464!5m2!1sen!2sbg" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-        <br>
-         <div class="form-text">
-            <p>Формуляр за записване на месецянич бюлетин  за гелрията.</p>
-         </div>
-        <a href="#" class="black-button">
-            Формуляр 
-            <img src="{{ "ui/arrow.svg" | relURL }}" alt="Arrow" class="arrow">
-        </a>
+<div class="exhibition-title">{{ .Title }}&nbsp;/&nbsp;{{ .Params.artist }}</div>
+<a href="{{ "/" | relURL }}" class="back-button">Назад</a>
+
+<div class="content-card">
+    <div class="header-section">
+        <div class="contact-title"><h1>{{ .Title }}</h1></div>
+        <div class="gall-name">Галерия</br>Лира</div>
+    </div>
+    <!-- Page Content -->
+    <div class="content-section-contacts">
+        {{ .Content }}
     </div>
 
-    {{- partial "footer.html" . -}}
+    <!-- Map Section -->
+    <div class="map">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.6081451183163!2d23.327651975175886!3d42.6908422141409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa857497c8e23d%3A0x2d68d5abfab32261!2sSofia%20Center%2C%20General%20Gurko%20St%2045%2C%201000%20Sofia!5e0!3m2!1sen!2sbg!4v1739699496464!5m2!1sen!2sbg" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <br>
+
+    <div class="form-text">
+        <p>Попълнете вашият e-mail, за да получавате месечния бюлетин на галерия „Лира“</p>
+    </div>
+
+    <form 
+    name="newsletter" method="POST" data-netlify="true" onsubmit="submit"
+    >
+
+
+    <!-- Styled Email Input Box -->
+    <div class="input-box">
+      <input type="email" id="email-input" placeholder="Вашият e-mail" name="email" required>
+    </div>
+
+    <!-- Submit Button with Email -->
+    <a href="#" class="black-button" onclick="submitEmailForm()">
+        Запишете се 
+        <img src="{{ "ui/arrow.svg" | relURL }}" alt="Arrow" class="arrow">
+    </a>
+</div>
+
+{{- partial "footer.html" . -}}
+
 {{ end }}
