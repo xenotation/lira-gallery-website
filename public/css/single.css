@@ -21,7 +21,7 @@
     padding: 2vh 2rem 1.5rem 2rem;
     border-radius: 0 3rem 0 0;
     position: relative;
-    margin: -2.3rem auto auto auto; /* The third one control the distance from the bottom */
+    margin: -4rem auto auto auto; /* The third one control the distance from the bottom */
     z-index: 900;
     border: 1px solid var(--color-black);
 
@@ -59,7 +59,7 @@
     display: flex;
     gap: 0.5rem;
     font-size: 1.4rem;
-    font-family: var(--font-heading);
+    font-family: var(--font-regular);
     font-weight: bold;
     color: var(--color-black);
     margin-bottom: 1rem;
@@ -107,8 +107,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 2rem;  
-
+    border-radius: 2rem;
 }
 
 /* Content Section */
@@ -146,7 +145,7 @@
 
 /* Artist Name Styling */
 .artist-name {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     color: transparent;
     -webkit-text-stroke: 0.5px var(--color-black);
@@ -180,9 +179,9 @@
 @media (max-width: 900px) {
     .content-card {
         width: auto;
-        padding: 1rem;
-        margin: auto;
-        border-radius: 0 42vw 0 0;
+        padding: 2rem 1rem 1rem 1rem;
+        margin: auto auto 3rem auto;
+        border-radius: 0 32vw 0 0;
         border: 2px solid var(--color-black);
     }
     
@@ -224,16 +223,16 @@
         aspect-ratio: 1.2 / 1;
         overflow: visible;
         border: 2px solid var(--color-black);
-        border-radius: 0.5rem;
+        border-radius: 1.4rem;
     }
     
     .number-sequence span {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     
     .featured-image img {
         border-bottom: 2px solid var(--color-black);
-        border-radius: 0;
+        border-radius: 2rem 2rem 0 0;
     }
     
     .bio,

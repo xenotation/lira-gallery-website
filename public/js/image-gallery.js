@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const spans = document.querySelectorAll('#image-selector span');
 
     if (!mainImage || spans.length === 0) {
-        console.error("Main image or spans not found!");
+        console.error("Nema main image!");
         return;
     }
 

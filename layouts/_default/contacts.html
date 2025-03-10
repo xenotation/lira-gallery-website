@@ -1,4 +1,39 @@
 {{ define "main" }}
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "{{ .Title }}",
+      "url": "{{ .RelPermalink }}",
+      "mainEntity": {
+        "@type": "ArtGallery",
+        "name": "Галерия Лира",
+        "url": "{{ .Site.BaseURL }}",
+        "description": "Галерия Лира е културно пространство, представящо съвременно изкуство.",
+        "image": "{{ "images/lira-3D.gif" | relURL }}",
+        "logo": "{{ "ui/logo.png" | relURL }}",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ул. Ген. Гурко 45",
+          "addressLocality": "София",
+          "postalCode": "1000",
+          "addressCountry": "BG"
+        },
+        "email": "info@yourgallery.com",
+        "telephone": "+359 123 456 789",
+        "openingHours": "Mo-Su 00:00-23:59",
+        "hasMap": "https://www.google.com/maps/place/Sofia+Center,+General+Gurko+St+45,+1000+Sofia",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "email": "info@yourgallery.com",
+          "telephone": "+359 123 456 789",
+          "availableLanguage": ["Bulgarian", "English"]
+        }
+      }
+    }
+    </script>
+    
     <div class="exhibition-title">{{ .Title }}&nbsp;/&nbsp;{{ .Params.artist }}</div>
     <a href="{{ "/" | relURL }}" class="back-button">Назад</a>
 

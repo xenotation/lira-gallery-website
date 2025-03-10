@@ -1,5 +1,47 @@
 {{ define "main" }}
-
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ExhibitionEvent",
+      "name": "{{ .Title }}",
+      "startDate": "{{ .Params.datestart }}",
+      "endDate": "{{ .Params.dateend }}",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "ArtGallery",
+        "name": "{{ .Site.Title }}",
+        "url": "{{ .Site.BaseURL }}",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Gallery St",
+          "addressLocality": "Your City",
+          "postalCode": "1000",
+          "addressCountry": "BG"
+        }
+      },
+      {{ $images := slice }}
+      {{ range .Resources.ByType "image" }}
+        {{ $images = $images | append .RelPermalink }}
+      {{ end }}
+      {{ if gt (len $images) 0 }}
+      "image": [
+        {{ range $index, $file := $images }}
+        "{{ $file }}"{{ if lt $index (sub (len $images) 1) }},{{ end }}
+        {{ end }}
+      ],
+      {{ end }}
+      "performer": {
+        "@type": "Person",
+        "name": "{{ .Params.artist }}",
+        "description": "{{ .Params.bio }}"
+      },
+      "description": "{{ .Summary }}",
+      "url": "{{ .RelPermalink }}"
+    }
+    </script>
+    
+    
     <div class="exhibition-title">{{ .Title }}&nbsp;/&nbsp;{{ .Params.artist }}</div>
     <a href="{{ "/exhibitions/" | relURL }}" class="back-button">Назад</a>
 

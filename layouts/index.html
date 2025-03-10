@@ -1,4 +1,70 @@
 {{ define "main" }}
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "{{ .Site.Title }}",
+      "url": "{{ .Site.BaseURL }}",
+      "description": "{{ .Site.Params.description }}",
+      "mainEntity": {
+        "@type": "ArtGallery",
+        "name": "{{ .Site.Title }}",
+        "url": "{{ .Site.BaseURL }}",
+        "logo": "{{ "ui/logo.png" | relURL }}",
+        "image": "{{ "ui/gallery-image.jpg" | relURL }}",
+        "description": "{{ .Site.Params.description }}",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Gallery St",
+          "addressLocality": "Your City",
+          "postalCode": "1000",
+          "addressCountry": "BG"
+        },
+        "email": "info@yourgallery.com",
+        "telephone": "+359 123 456 789",
+        "openingHours": "Mo-Su 00:00-23:59",
+        "hasMap": "https://www.google.com/maps/place/Your+Gallery+Location",
+        "member": [
+          {
+            "@type": "Person",
+            "name": "John Doe"
+          },
+          {
+            "@type": "Person",
+            "name": "Jane Smith"
+          }
+        ],
+        "event": [
+          {{ range $index, $page := .Site.RegularPages.ByDate.Reverse }}
+          {
+            "@type": "ExhibitionEvent",
+            "name": "{{ $page.Title }}",
+            "startDate": "{{ $page.Params.datestart }}",
+            "endDate": "{{ $page.Params.dateend }}",
+            "location": {
+              "@type": "Place",
+              "name": "{{ .Site.Title }}",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Gallery St",
+                "addressLocality": "Your City",
+                "postalCode": "1000",
+                "addressCountry": "BG"
+              }
+            },
+            "performer": {
+              "@type": "Person",
+              "name": "{{ $page.Params.artist }}"
+            },
+            "url": "{{ $page.RelPermalink }}"
+          }{{ if lt $index (sub (len $.Site.RegularPages.ByDate.Reverse) 1) }},{{ end }}
+          {{ end }}
+        ]
+      }
+    }
+    </script>
+    
+    
 <div class="exhibition-wrapper">
     <!-- Display exhibition content only on larger screens -->
 

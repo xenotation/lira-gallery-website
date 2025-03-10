@@ -328,13 +328,13 @@ nav.main-nav {
     text-align: left;
     align-items: baseline;
     margin-bottom: 1rem;
-    max-width: 6rem;
 }
 
 .header-section-gallery h1  {
     font-size: 4rem;
     line-height: 3rem;
-    font-family: var(--font-heading);
+    font-family: var(--font-regular);
+    font-weight: bold;
 }
 
 /* Archive */
@@ -375,11 +375,11 @@ nav.main-nav {
     padding: 2vh 2rem 1.5rem 2rem;
     border-radius: 0 3rem 0 0;
     position: relative;
-    margin: -2.3rem auto auto auto; /* The third one control the distance from the bottom */
+    margin: -4rem auto auto auto; /* The third one control the distance from the bottom */
     z-index: 900;
 }
 .artist-name-blue {
-    font-family: var(--font-standart);
+    font-family: var(--font-regular);
     font-size: 4rem;
     color: var(--color-white);
     line-height: 4rem;
@@ -778,4 +778,28 @@ nav.main-nav {
 }
 
 
+/* Mobile Archive */
+.featured-image-archive {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+.featured-image-archive img {
+    height: auto;
+}
+.header-archive h1 {
+    font-size: 3.6rem;
+}
+
+/* Gallery Mobile */
+
+.header-section-gallery {
+    max-width: 80vw;
+}
+
+.header-section-gallery h1 {
+    font-size: 3.6rem;
+    }
 }

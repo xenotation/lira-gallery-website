@@ -1,5 +1,5 @@
-baseURL = "https://lira-gallery.netlify.app/"
-title = "Моят сайт"
+baseURL = "https://gurko45.org/"
+title = "Галерия Лира"
 languageCode = "bg"
 
 [menu]

@@ -1,4 +1,43 @@
 {{ define "main" }}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "{{ .Title }}",
+    "url": "{{ .RelPermalink }}",
+    "description": "Списък на всички изложби в Галерия Лира.",
+    "mainEntity": [
+      {{ range $index, $page := .Pages }}
+      {
+        "@type": "ExhibitionEvent",
+        "name": "{{ $page.Title }}",
+        "startDate": "{{ $page.Params.datestart }}",
+        "endDate": "{{ $page.Params.dateend }}",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "ArtGallery",
+          "name": "Галерия Лира",
+          "url": "{{ .Site.BaseURL }}",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ул. Ген. Гурко 45",
+            "addressLocality": "София",
+            "postalCode": "1000",
+            "addressCountry": "BG"
+          }
+        },
+        "performer": {
+          "@type": "Person",
+          "name": "{{ $page.Params.artist }}"
+        },
+        "url": "{{ $page.Permalink }}"
+      }{{ if lt $index (sub (len $.Pages) 1) }},{{ end }}
+      {{ end }}
+    ]
+  }
+  </script>
+  
   <ul class="list-container">
     {{ range .Pages }}
       <li class="list-item">

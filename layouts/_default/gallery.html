@@ -1,5 +1,64 @@
 {{ define "main" }}
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ArtGallery",
+      "name": "{{ .Title }}",
+      "url": "{{ .Site.BaseURL }}",
+      "description": "{{ .Summary }}",
+      "image": "{{ "images/lira-3D.gif" | relURL }}",
+      "logo": "{{ "ui/logo.png" | relURL }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Gallery St",
+        "addressLocality": "Your City",
+        "postalCode": "1000",
+        "addressCountry": "BG"
+      },
+      "email": "info@yourgallery.com",
+      "telephone": "+359 123 456 789",
+      "openingHours": "Mo-Su 00:00-23:59",
+      "hasMap": "https://www.google.com/maps/place/Your+Gallery+Location",
+      "member": [
+        {
+          "@type": "Person",
+          "name": "Георги Михов",
+          "jobTitle": "Техник"
+        },
+        {
+          "@type": "Person",
+          "name": "Катрин Кочорапова",
+          "jobTitle": "Графичен дизайнер"
+        },
+        {
+          "@type": "Person",
+          "name": "Никола Стоянов",
+          "jobTitle": "Уеб дизайнер & философ",
+          "description": "Никола Стоянов е съвременен художник и философ от България, специализиран в дигиталното изкуство, философията на изкуството и уеб технологии. Неговата работа се фокусира върху връзката между технологиите и човешкото възприятие.",
+          "sameAs": [
+            "https://www.nikolastoyanov.com",
+            "https://www.linkedin.com/in/nikolastoyanov",
+            "https://www.instagram.com/nikolastoyanov"
+          ]
+        },
+        {
+          "@type": "Person",
+          "name": "Николай Марков",
+          "jobTitle": "Историк"
+        },
+        {
+          "@type": "Person",
+          "name": "Христо Калоянов",
+          "jobTitle": "Куратор"
+        }
+      ]
+    }
+    </script>
+    
+
     <div class="exhibition-title">{{ .Title }}&nbsp;/&nbsp;{{ .Params.artist }}</div>
+    <a href="{{ "/" | relURL }}" class="back-button">Назад</a>
 
     <div class="content-card">
         <div class="header-section-gallery">
