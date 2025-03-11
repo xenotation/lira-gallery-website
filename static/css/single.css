@@ -320,6 +320,7 @@
         border: 2px solid var(--color-black);
         border-radius: 2.1rem;
         max-width: 100%;
+        margin-bottom: 1rem;
     }
 
     .new-feature-image {
