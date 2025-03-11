@@ -56,7 +56,8 @@
         <div class="number-sequence" id="image-selector">
             {{ $counter := 1 }}
             {{ range $index, $file := (.Resources.ByType "image") }}
-                <span data-src="{{ $file.RelPermalink }}">{{ printf "%02d" $counter }}</span>
+            <span data-src="{{ $file.RelPermalink }}">{{ printf "%d" $counter }}</span>
+
                 {{ $counter = add $counter 1 }}
             {{ end }}
         </div>

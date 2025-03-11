@@ -196,12 +196,14 @@
 
 
 /* Mobile styles for screens up to 900px */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .content-card {
         width: auto;
-        padding: 1.6rem 1rem 1rem 1rem;
+        padding: 4.6rem 1rem 1rem 1rem;
         margin: auto auto 3rem auto;
-        border-radius: 0 32vw 0 0;
+
+        border-radius: 0 calc(18rem - 20vw) 0 0;
+
         border: 2px solid var(--color-black);
     }
     
@@ -249,7 +251,13 @@
     .number-sequence {
         margin-bottom: 1rem;
         margin-top: 0.5rem;
+        display: flex;
+        flex-wrap: nowrap; /* Prevents wrapping */
+        white-space: nowrap; /* Ensures numbers stay on one line */
+        overflow-x: auto; /* Allows scrolling if content overflows */
     }
+
+
     
     .number-sequence span {
         font-size: 1.4rem;
@@ -259,7 +267,9 @@
         border-bottom: 2px solid var(--color-black);
         border-radius: 2rem 2rem 0 0;
     }
-    
+
+
+
     .bio,
     .content-section {
         font-size: 1.2rem;
@@ -296,4 +306,27 @@
         margin: 0.3rem 1rem 0rem 1rem;
         padding-bottom: 0.3rem;
     }
+
+
+    .new-feature-container {
+        height: auto;
+        aspect-ratio: 1.2 / 1;
+        overflow: visible;
+        border: 2px solid var(--color-black);
+        border-radius: 2.1rem;
+        max-width: 100%;
+    }
+
+    .new-feature-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 0; /* No border-radius */
+        border: none; /* No border */
+        border-bottom: none;
+        border-radius: 2.1rem;
+    }
+
+
 }

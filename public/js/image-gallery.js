@@ -1,30 +1,36 @@
 document.addEventListener("DOMContentLoaded", function () {
+    let numberSequences = document.querySelectorAll('.number-sequence');
+
+    if (numberSequences.length > 1) {
+        console.warn("Multiple .number-sequence elements found. Merging them...");
+        
+        // Keep the first one, remove the rest
+        let firstSequence = numberSequences[0];
+        for (let i = 1; i < numberSequences.length; i++) {
+            let spans = numberSequences[i].querySelectorAll('span');
+            spans.forEach(span => firstSequence.appendChild(span.cloneNode(true))); // Move numbers to first sequence
+            numberSequences[i].remove(); // Remove the extra sequence
+        }
+    }
+
     const mainImage = document.getElementById('main-image');
     const spans = document.querySelectorAll('#image-selector span');
 
     if (!mainImage || spans.length === 0) {
-        console.error("Nema main image!");
+        console.error("Main image or image selector missing!");
         return;
     }
 
-    // Set and load the first image on initial load
+    // Set and load the first image
     const firstSpan = spans[0];
-    const firstImageSrc = firstSpan.getAttribute('data-src');
-    mainImage.src = firstImageSrc;
-    firstSpan.classList.add('active'); // Underline the first number
+    mainImage.src = firstSpan.getAttribute('data-src');
+    firstSpan.classList.add('active');
 
-    // Handle click events to switch images and underline selected number
+    // Handle click events to switch images
     spans.forEach(span => {
         span.addEventListener('click', () => {
-            const newImageSrc = span.getAttribute('data-src');
-
-            // Change main image source
-            mainImage.src = newImageSrc;
-
-            // Remove 'active' class from all spans
+            mainImage.src = span.getAttribute('data-src');
             spans.forEach(s => s.classList.remove('active'));
-
-            // Add 'active' class to the clicked span
             span.classList.add('active');
         });
     });

@@ -786,7 +786,9 @@ nav.main-nav {
 
 /* Contacts Mobile*/
 
+.input-box input {
 
+}
 
 .gall-name {
     display: none;
@@ -798,6 +800,7 @@ nav.main-nav {
 
 .map {
     max-width: 80vw;
+    margin: 0 auto; /* Centers the map */
 }
 
 .form-text p {
@@ -810,9 +813,13 @@ nav.main-nav {
     padding-right: 0;
 }
 
-.black-button  {
-    max-width: 80vw;
-}
+.input-box input,
+    .black-button {
+        width: 80vw;  /* Ensuring both have the same width */
+        max-width: 80vw;
+        padding: 1.5rem; /* Making them the same height */
+        font-size: 1.6rem; /* Adjusting font size for consistency */
+    }
 
 
 /* Mobile Archive */
