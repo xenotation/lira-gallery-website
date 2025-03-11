@@ -9,7 +9,7 @@
     <lastBuildDate>Fri, 21 Feb 2025 09:12:25 +0200</lastBuildDate>
     <atom:link href="//192.168.5.102:8080/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Стогодишният Прозорец</title>
+      <title>Стогодишният прозорец</title>
       <link>//192.168.5.102:8080/exhibitions/hundred-year-window/</link>
       <pubDate>Fri, 21 Feb 2025 09:12:25 +0200</pubDate>
       <guid>//192.168.5.102:8080/exhibitions/hundred-year-window/</guid>
@@ -35,6 +35,13 @@
       <pubDate>Wed, 08 Jan 2025 09:12:25 +0200</pubDate>
       <guid>//192.168.5.102:8080/contacts/</guid>
       <description>E-mail: contact@gurko45.org Адрес: ул. „Ген. Й. Гурко“ 45, 1000, София</description>
+    </item>
+    <item>
+      <title>Чартежи</title>
+      <link>//192.168.5.102:8080/archive/blueprints/</link>
+      <pubDate>Wed, 08 Jan 2025 09:12:25 +0200</pubDate>
+      <guid>//192.168.5.102:8080/archive/blueprints/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

@@ -319,7 +319,7 @@ nav.main-nav {
 /* Gallery Page */
 
 .team ul{
-    list-style: none;
+    list-style: none
 }
 
 .header-section-gallery {
@@ -358,7 +358,7 @@ nav.main-nav {
 
 .header-archive h1 {
     font-family: var(--font-main);
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1em;
     text-align: left;
     font-weight: bold;
@@ -792,6 +792,11 @@ nav.main-nav {
 
 .gall-name {
     display: none;
+}
+
+.team {
+    padding-right: 3rem;
+    text-align: left;
 }
 
 .header-section h1 {
