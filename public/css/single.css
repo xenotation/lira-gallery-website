@@ -13,6 +13,19 @@
 }
 
 /* Main Content Card */
+
+
+/* Define the animation */
+@keyframes slideIn {
+    from {
+        margin-top: -30rem;
+    }
+    to {
+        margin-top: -4rem;
+    }
+}
+
+/* Apply the animation */
 .content-card {
     width: 50%;
     max-width: 55rem;
@@ -21,15 +34,18 @@
     padding: 2vh 2rem 1.5rem 2rem;
     border-radius: 0 3rem 0 0;
     position: relative;
-    margin: -4rem auto auto auto; /* The third one control the distance from the bottom */
+    margin: -22rem auto auto auto; /* Start at -22rem */
     z-index: 900;
     border: 1px solid var(--color-black);
-
     hyphens: auto;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     word-break: break-word;
     overflow-wrap: break-word;
+    
+    /* Animation */
+    animation: slideIn 1.2s ease-out forwards;
+    animation-delay: 0.3s; /* Small delay to ensure rendering */
 }
 
 /* Header Section */
