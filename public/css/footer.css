@@ -8,12 +8,9 @@ footer {
     padding: 0 11rem 1.1rem 11rem;
     z-index: 800;
 }
-
 /* Inner Container - Adjustable Width */
 .footer-inner-container {
-
 }
-
 /* Divider */
 .footer-divider {
     width: 100%;
@@ -21,7 +18,6 @@ footer {
     background-color: var(--color-black);
     margin-bottom: 0.5rem;
 }
-
 /* Logo & Text Wrapper */
 .footer-content-wrapper {
     display: flex;
@@ -29,28 +25,23 @@ footer {
     gap: 0.5rem;
     justify-content: flex-start;
 }
-
 /* Logo */
 .footer-logo {
     width: 1.5rem;
     height: auto;
 }
-
 /* Text */
 .footer-content {
     font-size: 0.8rem;
     color: var(--color-black);
-    max-width: 20rem;
+    max-width: 18rem;
     text-align: left;
     align-items: baseline;
 }
-
 @media (max-width: 768px) {
-    
     footer {
         padding: 0 3rem 0.5rem 3rem;
         z-index: 700;
         max-width: 80vw;
     }
-
 }

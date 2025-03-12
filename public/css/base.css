@@ -332,7 +332,7 @@ nav.main-nav {
 }
 
 .header-section-gallery h1  {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 3rem;
     font-family: var(--font-regular);
     font-weight: bold;
@@ -367,7 +367,6 @@ nav.main-nav {
     text-transform: uppercase;
 }
 /* Blueprints */
-
 .content-card-blue {
     width: 50%;
     max-width: 55rem;
@@ -433,7 +432,6 @@ nav.main-nav {
 }
 
 /* Contacts */
-/* Email Input Box Styled like the Black Button */
 /* Email Input Box Styled like the Black Button */
 .input-box {
     display: flex;
@@ -840,6 +838,7 @@ nav.main-nav {
 }
 .header-archive h1 {
     font-size: 3.6rem;
+    hyphens: none;
 }
 
 /* Gallery Mobile */
