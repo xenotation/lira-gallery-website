@@ -636,19 +636,32 @@ nav.main-nav {
         z-index: 1100;
     }
 
+/* Default for all browsers */
+.overlay-text-left, 
+.overlay-text-right {
+    position: absolute;
+
+    transform: translateY(-38%);
+    font-size: 2.3rem;
+    color: var(--color-blue);
+    -webkit-text-stroke: 0.3px var(--color-black);
+    white-space: nowrap;
+    z-index: 1300;
+}
+
+/* Target iOS Safari */
+@supports (-webkit-touch-callout: none) {
     .overlay-text-left, 
     .overlay-text-right {
-        position: absolute;
-        top: 65%; /* Adjust this value if needed */
-        font-size: 2.3rem;
-        color: var(--color-blue);
-        -webkit-text-stroke: 0.3px var(--color-black);
-        white-space: nowrap;
-        z-index: 1300;
+        top: 30%; /* Use top-based positioning for iOS */
+        transform: none; /* Disable transform */
     }
-    
-    .overlay-text-left { left: 5%; text-align: left; }
-    .overlay-text-right { right: 5%; text-align: right; }
+}
+
+/* Individual alignment */
+.overlay-text-left { left: 5%; text-align: left; }
+.overlay-text-right { right: 5%; text-align: right; }
+
     
     
     
