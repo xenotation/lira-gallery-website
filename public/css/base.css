@@ -170,8 +170,8 @@ nav.main-nav {
     left: 0;
     transform: translateX(0%) translateY(-40%);
     color: var(--color-blue);
-    font-size: 3.8em; 
-    /* Change to rem please */
+    font-size: 3.8rem; 
+
     pointer-events: none;
     text-align: left;
     -webkit-text-stroke: 0.5px var(--color-black);
@@ -183,7 +183,7 @@ nav.main-nav {
     right: 0;
     transform: translateX(0%) translateY(-40%);
     color: var(--color-blue);
-    font-size: 3.6em;
+    font-size: 3.6rem;
 
     pointer-events: none;
     text-align: right;
