@@ -585,6 +585,11 @@ nav.main-nav {
     content: "\00a0/\00a0";
   }
 
+
+.mobile-only {
+    display: none;
+  }
+
 /* Mobile */
 
 /* Mobile  Header */
@@ -619,9 +624,7 @@ nav.main-nav {
         font-weight: bold;
         line-height: 2rem;
     }
-    .item span {
 
-    }
 
     .main-nav {
         background: none;
@@ -675,16 +678,7 @@ nav.main-nav {
     display: none;
 }
 
-.side-deco {
-    
-}
-
-
 /* Hide/Show Index Lander on screen size */
-
-.mobile-only {
-    display: none;
-}
 
     .lander-svg,
     .button-title,
