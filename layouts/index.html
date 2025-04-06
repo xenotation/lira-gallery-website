@@ -69,7 +69,10 @@
     <!-- Display exhibition content only on larger screens -->
 
         <a href="{{ with (index .Site.RegularPages.ByDate.Reverse 0) }}{{ .RelPermalink }}{{ end }}" class="button-wrapper">
-            <img class="lander-svg" src="{{ "ui/lander.svg" | relURL }}" alt="Decorative Element" />
+          {{ $latestPage := index .Site.RegularPages.ByDate.Reverse 0 }}
+          {{ with $latestPage.Resources.Get "lander-overlay.svg" }}
+            <img class="lander-svg" src="{{ .RelPermalink }}" alt="Decorative Element" />
+          {{ end }}
             <span class="button-title">
                 {{ with (index .Site.RegularPages.ByDate.Reverse 0) }}{{ .Title }}{{ end }}
             </span>

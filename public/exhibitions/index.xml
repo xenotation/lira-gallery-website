@@ -6,8 +6,15 @@
     <description>Recent content in Exhibitions on Галерия „Лира“</description>
     <generator>Hugo</generator>
     <language>bg</language>
-    <lastBuildDate>Fri, 21 Feb 2025 09:12:25 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 22 Feb 2025 09:12:25 +0200</lastBuildDate>
     <atom:link href="//192.168.5.102:8080/exhibitions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Подведени под образ ситуации</title>
+      <link>//192.168.5.102:8080/exhibitions/image-situations/</link>
+      <pubDate>Sat, 22 Feb 2025 09:12:25 +0200</pubDate>
+      <guid>//192.168.5.102:8080/exhibitions/image-situations/</guid>
+      <description>&gt;&gt; English below &gt;&gt;&#xD;„Подведени под образ ситуации е фотографска инсталация, основаваща се на истински фалшиви изображения и генеративни грешки. Произведението представя серия от фотографии, които са резултат от неправилната употреба на телефонна камера.&#xA;В баналността на една фотография, например пейзажната, търся детайли, които се появяват като случайности, предизвикани от непривичната употреба на панорамната функция на смартфон. Дори тези ситуации, предизвикващи случайни изменения да са умишлено предизвикани, процесите на изкривяване и декомпозиране на образа са функции, които са тотално извън моя контрол.</description>
+    </item>
     <item>
       <title>Стогодишният прозорец</title>
       <link>//192.168.5.102:8080/exhibitions/hundred-year-window/</link>

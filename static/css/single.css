@@ -55,6 +55,7 @@
     text-transform: uppercase;
     text-align: left;
     align-items: baseline;   
+    hyphens: none;
 }
 
 .header-section h1,
@@ -64,6 +65,7 @@
     color: var(--color-black);
     line-height: 3.6rem;
     font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
 .dates {
@@ -114,7 +116,7 @@
 .featured-image {
     position: relative;
     width: 100%;
-    height: 27.5vw;
+    height: 28vw;
     overflow: hidden;
     margin: 0 auto 3rem auto;
 }
@@ -174,7 +176,7 @@
 }
 
 .artist-stars img {
-    width: 1.5rem;
+    width: 3rem;
     height: auto;
 }
 
@@ -226,7 +228,11 @@
     .content-section {
         width: auto;
     }
-
+    .artist-stars img {
+        width: 1.5rem;
+        height: auto;
+    }
+    
     .artist-circles img {
         width: 10rem;
         height: auto;

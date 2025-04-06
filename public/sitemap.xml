@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//192.168.5.102:8080/exhibitions/</loc>
-    <lastmod>2025-02-21T09:12:25+02:00</lastmod>
+    <lastmod>2025-02-22T09:12:25+02:00</lastmod>
   </url><url>
     <loc>//192.168.5.102:8080/</loc>
-    <lastmod>2025-02-21T09:12:25+02:00</lastmod>
+    <lastmod>2025-02-22T09:12:25+02:00</lastmod>
+  </url><url>
+    <loc>//192.168.5.102:8080/exhibitions/image-situations/</loc>
+    <lastmod>2025-02-22T09:12:25+02:00</lastmod>
   </url><url>
     <loc>//192.168.5.102:8080/exhibitions/hundred-year-window/</loc>
     <lastmod>2025-02-21T09:12:25+02:00</lastmod>

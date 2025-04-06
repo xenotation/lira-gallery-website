@@ -40,14 +40,14 @@ disableKinds = ["taxonomy", "term"]
 # Ticker  Items
 
 [[params.tickerItems]]
-text = "Антонен Буши / Image-Diverted Situations / 03.-04.25 / ул. „Ген. Й. Гурко“ 45"
+text = "Антонен Буши / Image-Diverted Situations / 03 – 04.2025 / ул. „Ген. Й. Гурко“ 45"
 [[params.tickerItems]]
-text = "Антонен Буши / Image-Diverted Situations / 03.-04.25 / ул. „Ген. Й. Гурко“ 45"
+text = "Антонен Буши / Image-Diverted Situations / 03 – 04.2025 / ул. „Ген. Й. Гурко“ 45"
 [[params.tickerItems]]
-text = "Антонен Буши / Image-Diverted Situations / 03.-04.25 / ул. „Ген. Й. Гурко“ 45"
+text = "Антонен Буши / Image-Diverted Situations / 03 – 04.2025 / ул. „Ген. Й. Гурко“ 45"
 [[params.tickerItems]]
-text = "Антонен Буши / Image-Diverted Situations / 03.-04.25 / ул. „Ген. Й. Гурко“ 45"
+text = "Антонен Буши / Image-Diverted Situations / 03 – 04.2025 / ул. „Ген. Й. Гурко“ 45"
 [[params.tickerItems]]
-text = "Антонен Буши / Image-Diverted Situations / 03.-04.25 / ул. „Ген. Й. Гурко“ 45"
+text = "Антонен Буши / Image-Diverted Situations / 03 – 04.2025 / ул. „Ген. Й. Гурко“ 45"
 [params]
 footerText = "Проектът се осъществява с подкрепата на Национален фонд „Култура“, програма „Дебюти“."
