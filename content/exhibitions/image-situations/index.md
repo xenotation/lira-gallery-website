@@ -6,11 +6,11 @@ artist = "Антонен Буши"
 datestart = "03.2025"
 dateend = "04.2025"
 
-bio = ["Антонен Буши (1990) завършва училището по изящни изкуства в Брест. Сега живее и работи между Франция и България. Неговата практика е тази на фланьора. Той използва абсурда, неконвенционалната употреба на различни медии и случайността като инструменти за изследване на собственото въображение, както и на обществените структури и модели на мислене като форми на мечтателно бродене в съвременния художествен контекст."]
+bio = ["Антонен Буши (1990) завършва училището по изящни изкуства в Брест. Сега живее и работи между Франция и България. Неговата практика е тази на фланьора. Той използва абсурда, неконвенционалната употреба на различни медии и случайността като инструменти за изследване на собственото въображение, както и на обществените структури и модели на мислене като форми на мечтателно бродене в съвременния художествен контекст.", "фотограф Михаил Новаков"]
 
 artisteng = "Antonin Bouchy"
 engbio = [
-  "Antonin Bouchy (1990) graduated from the Fine Arts school of Brest. He now lives and works between France and Bulgaria. His practice is akin to that of a flâneur. Antonin uses the absurd, misappropriation, chance and accident as tools to develop a reflection aimed at confronting his own imagination with the structures and paradigms of our society, offering the experience of a poetic wandering in a contemporary artistic landscape."
+  "Antonin Bouchy (1990) graduated from the Fine Arts school of Brest. He now lives and works between France and Bulgaria. His practice is akin to that of a flâneur. Antonin uses the absurd, misappropriation, chance and accident as tools to develop a reflection aimed at confronting his own imagination with the structures and paradigms of our society, offering the experience of a poetic wandering in a contemporary artistic landscape.", "photographer Mihail Novakov"
 ]
 
 engbody = [
