@@ -94,38 +94,39 @@
       </div>
     </div>
     
-  <!-- Exhibition Body (EN) -->
-  {{ if or .Params.engbody .Params.engbio .Params.artisteng }}
-  <hr />
-  </br>
-{{ end }}
-
-  {{ with .Params.engbody }}
-    <div class="eng-body">
-      {{ range . }}
-
-        <p>{{ . }}</p>
-      {{ end }}
-    </div>
-  {{ end }}
-    
-  <div class="artist-section">
-    <div class="name-stars-wrapper">
-      <div class="artist-name">{{ .Params.artisteng }}</div>
-      <div class="artist-stars">
-        <img src="{{ "ui/star.svg" | relURL }}" alt="Lira Stat" />
-        <img src="{{ "ui/star.svg" | relURL }}" alt="Lira Stat" />
-        <img src="{{ "ui/star.svg" | relURL }}" alt="Lira Stat" />
-      </div>
-    </div>
-
-  {{ with .Params.engbio }}
-  <div class="bio en-bio">
-    {{ range . }}
-      <p>{{ . }}</p>
+    <!-- Exhibition Body (EN) -->
+    {{ if or .Params.engbody .Params.engbio .Params.artisteng }}
+      <hr />
+      </br>
     {{ end }}
-  </div>
-{{ end }}
+
+    {{ with .Params.engbody }}
+      <div class="eng-body">
+        {{ range . }}
+          <p>{{ . }}</p>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    <!-- Artist Section in English (conditionally shown only if engbio exists) -->
+    {{ with .Params.engbio }}
+      <div class="artist-section">
+        <div class="name-stars-wrapper">
+          <div class="artist-name">{{ $.Params.artisteng }}</div>
+          <div class="artist-stars">
+            <img src="{{ "ui/star.svg" | relURL }}" alt="Lira Stat" />
+            <img src="{{ "ui/star.svg" | relURL }}" alt="Lira Stat" />
+            <img src="{{ "ui/star.svg" | relURL }}" alt="Lira Stat" />
+          </div>
+        </div>
+
+        <div class="bio en-bio">
+          {{ range . }}
+            <p>{{ . }}</p>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
 
   </div>
 </div>
