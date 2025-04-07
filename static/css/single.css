@@ -104,7 +104,7 @@
     z-index: 850;
     left: 50%; transform: translateX(-50%);
 }
-
+/* TEMP FIX FOR SCG SCALING ON smmalled then full screen */
 @media (max-width: 1850px) {
     .decorative-svg {
         width: 57.8vw;
