@@ -98,12 +98,17 @@
 .decorative-svg {
     position: absolute;
     left: 0;
-    width: 80vw;
-    max-width: 55vw;
-
+    width: 55vw;
+    max-width: 58vw;
     pointer-events: none;
     z-index: 850;
     left: 50%; transform: translateX(-50%);
+}
+
+@media (max-width: 1850px) {
+    .decorative-svg {
+        width: 57.8vw;
+    }
 }
 
 .decorative-svg img {
