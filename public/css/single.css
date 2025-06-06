@@ -61,9 +61,9 @@
 .header-section h1,
 .header-section .dates {
     font-family: var(--font-heading);
-    font-size: 4rem;
+    font-size: 5rem;
     color: var(--color-black);
-    line-height: 3.6rem;
+    line-height: 4rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
