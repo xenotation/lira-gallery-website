@@ -45,7 +45,11 @@
 <div class="content-card">
   <div class="header-section">
     <h1>{{ .Title }}</h1>
-    <div class="dates">{{ .Params.datestart }} {{ .Params.dateend }}</div>
+    <div class="dates">
+      <span>{{ .Params.datestart }}</span>
+      <span>{{ .Params.dateend }}</span>
+    </div>
+    
   </div>
 
   <!-- Number sequence under title with data-src -->
