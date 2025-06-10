@@ -55,22 +55,21 @@
     {{ end }}
   </div>
 
-  <!-- Decorative SVG -->
+<!-- Unified Container for Image + SVG -->
+<div class="image-wrapper">
   {{ with .Resources.GetMatch "decorative-overlay.svg" }}
-  <div class="decorative-svg">
-    <img src="{{ .RelPermalink }}" alt="Decorative Overlay" />
-  </div>
+    <img class="decorative-overlay" src="{{ .RelPermalink }}" alt="Decorative Overlay" />
   {{ end }}
 
-  <!-- Image Section -->
-  <div class="featured-image">
-    <img id="main-image" src="{{ with $images.Get 0 }}{{ .RelPermalink }}{{ end }}" alt="{{ .Title }}" />
-    <div class="dates-mobile">
-      <span>{{ .Params.datestart }}</span>
-      <span> - </span>
-      <span>{{ .Params.dateend }}</span>
-    </div>
+  <img id="main-image" class="featured-img" src="{{ with $images.Get 0 }}{{ .RelPermalink }}{{ end }}" alt="{{ .Title }}" />
+
+  <div class="dates-mobile">
+    <span>{{ .Params.datestart }}</span>
+    <span> - </span>
+    <span>{{ .Params.dateend }}</span>
   </div>
+</div>
+
 
   <!-- Exhibition Content -->
   <div class="content-section">

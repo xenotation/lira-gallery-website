@@ -94,45 +94,44 @@
     color: var(--color-black);
 }
 
-/* Decorative SVG */
-.decorative-svg {
-    position: absolute;
-    left: 0;
-    width: 55vw;
-    max-width: 58vw;
-    pointer-events: none;
-    z-index: 850;
-    left: 50%; transform: translateX(-50%);
-}
-/* TEMP FIX FOR SCG SCALING ON smmalled then full screen */
-@media (max-width: 1850px) {
-    .decorative-svg {
-        width: 57.8vw;
-    }
-}
-
-.decorative-svg img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-/* Featured Image */
-.featured-image {
+.image-wrapper {
     position: relative;
     width: 100%;
-    height: 29vw;
-    overflow: hidden;
-    margin: 0 auto 3rem auto;
+    max-width: 100%;
+    aspect-ratio: 1.6 / 1;
+    /* margin: 0 auto 3rem auto; */
+    overflow: visible;
 }
 
-.featured-image img {
-    width: 100%;
+.featured-img,
+.decorative-overlay {
+    position: absolute;
+    top: 1%; left: 1%;
+    width: 98%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 2rem;
+    z-index: 1;
 }
+
+.featured-img {
+    height: 94%;
+}
+
+.decorative-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 115%; 
+    height: auto;
+    transform: translate(-50%, -45%);
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+    z-index: 2;
+}
+
 
 /* Content Section */
 .bio,
@@ -223,46 +222,134 @@
 /* Mobile styles for screens up to 900px */
 @media (max-width: 1000px) {
     .content-card {
-        width: auto;
-        padding: 4.6rem 1rem 1rem 1rem;
-        margin: auto auto 3rem auto;
-
-        border-radius: 0 calc(18rem - 20vw) 0 0;
-
-        border: 2px solid var(--color-black);
+      width: auto;
+      padding: 4.6rem 1rem 1rem 1rem;
+      margin: auto auto 3rem auto;
+      border-radius: 0 calc(18rem - 20vw) 0 0;
+      border: 2px solid var(--color-black);
     }
-    
+  
     .content-section {
-        width: auto;
+      width: auto;
     }
-    .artist-stars img {
-        width: 1.5rem;
-        height: auto;
+  
+    .header-section h1 {
+      font-size: 2rem;
+      line-height: 2rem;
+      max-width: 75vw;
     }
-    
-    .artist-circles img {
-        width: 10rem;
-        height: auto;
+  
+    .header-section .dates {
+      font-size: 2rem;
+    }
+  
+    .exhibition-title {
+      display: none;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+    }
+  
+    .back-button {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: var(--color-black);
+      font-size: 1.2rem;
+      z-index: 900;
+      background-color: var(--color-white);
+      padding: 0.3rem 2vw 0.3rem 100vw;
+      border: 1px solid var(--color-black);
+    }
+  
+    .image-wrapper {
+        aspect-ratio: 1.2 / 1;
+        overflow: hidden;
+        border-radius: 2.1rem;
+        border: 2px solid var(--color-black);
+        width: 100%;
+        position: relative;
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      
+      .featured-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2rem 2rem 0 0;
+        display: block;
+        top:0;
+        left: 0;
+      }
+      
+      .dates-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: var(--font-heading);
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 0.4rem 1rem;
+        border-top: 2px solid var(--color-black);
+        border-radius: 0 0 2.1rem 2.1rem;
+        background-color: var(--color-white);
+        position: relative;
+        z-index: 2;
+      }
+      
+  
+    .decorative-overlay {
+      display: none;
+
     }
 
-    .header-section h1 {
-        font-size: 2rem;
-        line-height: 2rem;
-        max-width: 75vw;
+  
+    .dates {
+      display: none;
     }
-    
-    .header-section .dates {
-        font-size: 2rem;
+  
+    .artist-stars img {
+      width: 1.5rem;
+      height: auto;
     }
-    
-    .exhibition-title {
-        display: none;
+  
+    .artist-circles img {
+      width: 10rem;
+      height: auto;
     }
-    
+  
+    .number-sequence {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+      display: flex;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      overflow-x: auto;
+    }
+  
+    .number-sequence span {
+      font-size: 1.4rem;
+    }
+  
+    .bio,
+    .content-section {
+      font-size: 1.2rem;
+      padding: 0;
+    }
+  
+    .artist-name {
+      font-size: 2rem;
+    }
+  
     main {
-        z-index: auto;
-        width: 96vw;
-        max-width: auto;
+      z-index: auto;
+      width: 96vw;
+      max-width: auto;
     }
     
     .decorative-svg {
@@ -323,8 +410,6 @@
         font-family: var(--font-heading);
         font-size: 1.2rem;
         font-weight: bold;
-        margin: 0.3rem 1rem 0rem 1rem;
-        padding-bottom: 0.3rem;
     }
 
 
