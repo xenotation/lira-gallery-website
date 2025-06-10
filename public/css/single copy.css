@@ -105,11 +105,11 @@
     left: 50%; transform: translateX(-50%);
 }
 /* TEMP FIX FOR SCG SCALING ON smmalled then full screen */
-@media (max-width: 1850px) {
+/* @media (max-width: 1850px) {
     .decorative-svg {
         width: 57.8vw;
     }
-}
+} */
 
 .decorative-svg img {
     width: 100%;
@@ -216,9 +216,7 @@
     border-radius: 2.1rem;
 }
 
-.dates-mobile {
-    display: none;
-}
+
 
 /* Mobile styles for screens up to 900px */
 @media (max-width: 1000px) {

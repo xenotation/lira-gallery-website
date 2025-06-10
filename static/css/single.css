@@ -216,7 +216,9 @@
     border-radius: 2.1rem;
 }
 
-
+.dates-mobile {
+    display: none;
+}
 
 /* Mobile styles for screens up to 900px */
 @media (max-width: 1000px) {
