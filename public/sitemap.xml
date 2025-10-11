@@ -2,32 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/exhibitions/</loc>
+    <loc>http://192.168.0.103:1313/exhibitions/</loc>
+    <lastmod>2025-10-06T00:00:25+02:00</lastmod>
+  </url><url>
+    <loc>http://192.168.0.103:1313/</loc>
+    <lastmod>2025-10-06T00:00:25+02:00</lastmod>
+  </url><url>
+    <loc>http://192.168.0.103:1313/exhibitions/gonna-happen/</loc>
+    <lastmod>2025-10-06T00:00:25+02:00</lastmod>
+  </url><url>
+    <loc>http://192.168.0.103:1313/exhibitions/common-parts/</loc>
     <lastmod>2025-06-01T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-06-01T09:12:25+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/exhibitions/common-parts/</loc>
-    <lastmod>2025-06-01T09:12:25+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/exhibitions/image-situations/</loc>
+    <loc>http://192.168.0.103:1313/exhibitions/image-situations/</loc>
     <lastmod>2025-02-22T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/exhibitions/hundred-year-window/</loc>
+    <loc>http://192.168.0.103:1313/exhibitions/hundred-year-window/</loc>
     <lastmod>2025-02-21T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/gallery/</loc>
+    <loc>http://192.168.0.103:1313/gallery/</loc>
     <lastmod>2025-01-08T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archive/</loc>
+    <loc>http://192.168.0.103:1313/archive/</loc>
     <lastmod>2025-01-08T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contacts/</loc>
+    <loc>http://192.168.0.103:1313/contacts/</loc>
     <lastmod>2025-01-08T09:12:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://192.168.0.103:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://192.168.0.103:1313/tags/</loc>
   </url>
 </urlset>
